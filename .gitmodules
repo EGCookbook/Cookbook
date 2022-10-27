@@ -1,3 +1,15 @@
 [submodule "Modules/Models"]
 	path = Modules/Models
 	url = https://github.com/iCookbook/Models
+[submodule "Modules/Personal"]
+	path = Modules/Personal
+	url = https://github.com/iCookbook/Personal
+[submodule "Modules/Search"]
+	path = Modules/Search
+	url = https://github.com/iCookbook/Search
+[submodule "Modules/Discover"]
+	path = Modules/Discover
+	url = https://github.com/iCookbook/Discover
+[submodule "Modules/Resources"]
+	path = Modules/Resources
+	url = https://github.com/iCookbook/Resources
