@@ -13,7 +13,7 @@ class AppDIContainterTests: XCTestCase {
     var appDIContainer: AppDIContainer!
     
     override func setUpWithError() throws {
-        appDIContainer = AppDIContainer.shared
+        appDIContainer = AppDIContainer()
     }
     
     override func tearDownWithError() throws {

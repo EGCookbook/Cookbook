@@ -10,10 +10,6 @@ import Persistence
 
 final class AppDIContainer {
     
-    // MARK: - Public Properties
-    
-    public static let shared = AppDIContainer()
-    
     // MARK: - Private Properties
     
     /// Core Data model's specified name.
@@ -29,10 +25,6 @@ final class AppDIContainer {
     /// Core Data Manager. It is responsible for all operations connected with persistance.
     private lazy var coreDataManager: CoreDataManagerProtocol = CoreDataManager(containerName: coreDataContainerName)
     
-    // MARK: - Init
-    
-    private init() {}
-    
     // MARK: - Internal Methods
     
     /// Method that resolves and provides us ``NetworkManager`` object.
@@ -41,6 +33,8 @@ final class AppDIContainer {
         return networkManager
     }
     
+    /// Method that resolves and provides us ``CoreDataManager`` object.
+    /// - Returns: ``CoreDataManager`` instance.
     func resolveCoreDataManager() -> CoreDataManagerProtocol {
         return coreDataManager
     }

@@ -17,6 +17,8 @@ final class AppCoordinator {
     
     /// `UIWindow` of the application, provided from the ``AppDelegate``
     private let window: UIWindow
+    /// Application DI containter.
+    private let appDIContainter = AppDIContainer()
     /// Root view controller of the application
     private let tabBarController = UITabBarController()
     /// View controllers to set in the tab bar controller
@@ -44,23 +46,20 @@ final class AppCoordinator {
 
 private extension AppCoordinator {
     func setupDiscover() {
-        let dependency = AppDIContainer.shared.resolveNetworkManager()
-        let context = DiscoverContext(moduleDependency: dependency)
+        let context = DiscoverContext(moduleDependency: appDIContainter.resolveNetworkManager())
         let assembly = DiscoverAssembly.assemble(with: context)
         let discoverViewController = createNavController(viewController: assembly.viewController, itemName: Texts.Discover.title, itemImage: Images.TabBarItems.discover)
         viewControllers.append(discoverViewController)
     }
     
     func setupSearch() {
-        let dependency = AppDIContainer.shared.resolveNetworkManager()
-        let context = SearchContext(moduleDependency: dependency)
+        let context = SearchContext(moduleDependency: appDIContainter.resolveNetworkManager())
         let assembly = SearchAssembly.assemble(with: context)
         let historyViewController = createNavController(viewController: assembly.viewController, itemName: Texts.Search.title, itemImage: Images.TabBarItems.search)
         viewControllers.append(historyViewController)
     }
     
     func setupPersonal() {
-//        let dependency = AppDIContainer.shared.resolveCoreDataManager()
         let context = PersonalContext(moduleOutput: nil)
         let assembly = PersonalAssembly.assemble(with: context)
         let analyticsViewController = createNavController(viewController: assembly.viewController, itemName: Texts.Personal.title, itemImage: Images.TabBarItems.person)
