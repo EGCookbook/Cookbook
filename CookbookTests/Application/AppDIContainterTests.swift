@@ -10,21 +10,19 @@ import XCTest
 
 class AppDIContainterTests: XCTestCase {
     
-    var appDIContainer: AppDIContainer!
-    
     override func setUpWithError() throws {
-        appDIContainer = AppDIContainer()
     }
     
     override func tearDownWithError() throws {
-        appDIContainer = nil
     }
     
+    /// # In tests below, it is checked that the returned object is `nil`.
+    
     func testResolvingNetworkManager() throws {
-        XCTAssertNotNil(appDIContainer.resolveNetworkManager())
+        XCTAssertNotNil(AppDIContainer.shared.resolveNetworkManager())
     }
     
     func testResolvingCoreDataManager() throws {
-        XCTAssertNotNil(appDIContainer.resolveCoreDataManager())
+        XCTAssertNotNil(AppDIContainer.shared.resolveCoreDataManager())
     }
 }
