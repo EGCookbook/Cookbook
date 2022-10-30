@@ -44,20 +44,23 @@ final class AppCoordinator {
 
 private extension AppCoordinator {
     func setupDiscover() {
-        let context = DiscoverContext(moduleOutput: nil)
+        let dependency = AppDIContainer.shared.resolveNetworkManager()
+        let context = DiscoverContext(moduleDependency: dependency)
         let assembly = DiscoverAssembly.assemble(with: context)
         let discoverViewController = createNavController(viewController: assembly.viewController, itemName: Texts.Discover.title, itemImage: Images.TabBarItems.discover)
         viewControllers.append(discoverViewController)
     }
     
     func setupSearch() {
-        let context = SearchContext(moduleOutput: nil)
+        let dependency = AppDIContainer.shared.resolveNetworkManager()
+        let context = SearchContext(moduleDependency: dependency)
         let assembly = SearchAssembly.assemble(with: context)
         let historyViewController = createNavController(viewController: assembly.viewController, itemName: Texts.Search.title, itemImage: Images.TabBarItems.search)
         viewControllers.append(historyViewController)
     }
-
+    
     func setupPersonal() {
+//        let dependency = AppDIContainer.shared.resolveCoreDataManager()
         let context = PersonalContext(moduleOutput: nil)
         let assembly = PersonalAssembly.assemble(with: context)
         let analyticsViewController = createNavController(viewController: assembly.viewController, itemName: Texts.Personal.title, itemImage: Images.TabBarItems.person)

@@ -5,9 +5,8 @@
 //  Created by Егор Бадмаев on 28.10.2022.
 //
 
-import Foundation
 import Networking
-//import Persistance
+import Persistence
 
 final class AppDIContainer {
     
@@ -16,8 +15,9 @@ final class AppDIContainer {
     public static let shared = AppDIContainer()
     
     // MARK: - Private Properties
+    
     /// Core Data model's specified name.
-//    private let coreDataContainerName = "Cookbook"
+    private let coreDataContainerName = "Cookbook"
     /// `URLSessionConfiguration` for ``NetworkManager``.
     private let networkConfiguration = URLSessionConfiguration.default
     /// Network Manager. It is responsible for all network requests of this app.
@@ -27,7 +27,7 @@ final class AppDIContainer {
         return networkManager
     }()
     /// Core Data Manager. It is responsible for all operations connected with persistance.
-//    private lazy var coreDataManager: CoreDataManagerProtocol = CoreDataManager(containterName: coreDataContainerName)
+    private lazy var coreDataManager: CoreDataManagerProtocol = CoreDataManager(containerName: coreDataContainerName)
     
     // MARK: - Init
     
@@ -41,7 +41,7 @@ final class AppDIContainer {
         return networkManager
     }
     
-//    func resolveCoreDataManager() -> CoreDataManagerProtocol {
-//        return coreDataManager
-//    }
+    func resolveCoreDataManager() -> CoreDataManagerProtocol {
+        return coreDataManager
+    }
 }
