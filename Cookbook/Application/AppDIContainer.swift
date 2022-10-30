@@ -11,6 +11,10 @@ import Networking
 
 final class AppDIContainer {
     
+    // MARK: - Public Properties
+    
+    public static let shared = AppDIContainer()
+    
     // MARK: - Private Properties
     /// Core Data model's specified name.
 //    private let coreDataContainerName = "Cookbook"
@@ -25,15 +29,19 @@ final class AppDIContainer {
     /// Core Data Manager. It is responsible for all operations connected with persistance.
 //    private lazy var coreDataManager: CoreDataManagerProtocol = CoreDataManager(containterName: coreDataContainerName)
     
+    // MARK: - Init
+    
+    private init() {}
+    
     // MARK: - Internal Methods
     
     /// Method that resolves and provides us ``NetworkManager`` object.
     /// - Returns: ``NetworkManager`` instance.
-    static func resolveNetworkManager() -> NetworkManagerProtocol {
+    func resolveNetworkManager() -> NetworkManagerProtocol {
         return networkManager
     }
     
-//    static func resolveCoreDataManager() -> CoreDataManagerProtocol {
+//    func resolveCoreDataManager() -> CoreDataManagerProtocol {
 //        return coreDataManager
 //    }
 }

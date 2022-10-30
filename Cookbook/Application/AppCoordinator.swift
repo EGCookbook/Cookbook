@@ -15,7 +15,7 @@ final class AppCoordinator {
     
     // MARK: - Private Properties
     
-    /// `UIWindow` of the application, provided from the ``SceneDelegate``
+    /// `UIWindow` of the application, provided from the ``AppDelegate``
     private let window: UIWindow
     /// Root view controller of the application
     private let tabBarController = UITabBarController()

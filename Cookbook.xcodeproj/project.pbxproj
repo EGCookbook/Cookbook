@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F049CE352909119D0078E9E1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F049CE342909119D0078E9E1 /* README.md */; };
+		F01C27FF290EB7FD0060B60B /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01C27EA290EB6BE0060B60B /* Networking.framework */; platformFilter = ios; };
+		F01C2800290EB7FD0060B60B /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F01C27EA290EB6BE0060B60B /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F04DE34B290ADEAC00DD4C39 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04DE34A290ADEAC00DD4C39 /* AppCoordinator.swift */; };
-		F04DE3DF290AE49800DD4C39 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04DE3CB290AE26300DD4C39 /* Resources.framework */; platformFilter = ios; };
-		F04DE3E0290AE49800DD4C39 /* Resources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F04DE3CB290AE26300DD4C39 /* Resources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F04DE4A3290AEBC900DD4C39 /* Discover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04DE422290AEA6000DD4C39 /* Discover.framework */; platformFilter = ios; };
 		F04DE4A4290AEBC900DD4C39 /* Discover.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F04DE422290AEA6000DD4C39 /* Discover.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F04DE4A5290AEBCD00DD4C39 /* Personal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04DE48E290AEB7B00DD4C39 /* Personal.framework */; platformFilter = ios; };
@@ -27,12 +26,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F04DE3CA290AE26300DD4C39 /* PBXContainerItemProxy */ = {
+		F01C27E9290EB6BE0060B60B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F04DE3C6290AE26300DD4C39 /* Resources.xcodeproj */;
+			containerPortal = F01C27E4290EB6BE0060B60B /* Networking.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = F04DE3BC290AE23C00DD4C39;
-			remoteInfo = Resources;
+			remoteGlobalIDString = F01C27B3290EB5BF0060B60B;
+			remoteInfo = Networking;
+		};
+		F01C27EB290EB6BE0060B60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F01C27E4290EB6BE0060B60B /* Networking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F01C27BD290EB5C00060B60B;
+			remoteInfo = NetworkingTests;
 		};
 		F04DE421290AEA6000DD4C39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -90,6 +96,13 @@
 			remoteGlobalIDString = F02CE9782909780E00BB0D85;
 			remoteInfo = ModelsTests;
 		};
+		F0BF8BE2290EBD9600D271CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0BF8BDE290EBD9600D271CD /* Resources.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0BF8BCE290EBD3800D271CD;
+			remoteInfo = Resources;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -101,8 +114,8 @@
 			files = (
 				F096E5B92909C55C000BE53A /* Models.framework in Embed Frameworks */,
 				F04DE4A4290AEBC900DD4C39 /* Discover.framework in Embed Frameworks */,
+				F01C2800290EB7FD0060B60B /* Networking.framework in Embed Frameworks */,
 				F04DE4A6290AEBCD00DD4C39 /* Personal.framework in Embed Frameworks */,
-				F04DE3E0290AE49800DD4C39 /* Resources.framework in Embed Frameworks */,
 				F04DE4A8290AEBDF00DD4C39 /* Search.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -111,9 +124,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F01C27E4290EB6BE0060B60B /* Networking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Networking.xcodeproj; path = Modules/Networking/Networking.xcodeproj; sourceTree = "<group>"; };
 		F049CE342909119D0078E9E1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F04DE34A290ADEAC00DD4C39 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		F04DE3C6290AE26300DD4C39 /* Resources.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Resources.xcodeproj; path = Modules/Resources/Resources.xcodeproj; sourceTree = "<group>"; };
 		F04DE41C290AEA6000DD4C39 /* Discover.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Discover.xcodeproj; path = Modules/Discover/Discover.xcodeproj; sourceTree = "<group>"; };
 		F04DE449290AEAD300DD4C39 /* Search.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Search.xcodeproj; path = Modules/Search/Search.xcodeproj; sourceTree = "<group>"; };
 		F04DE488290AEB7B00DD4C39 /* Personal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Personal.xcodeproj; path = Modules/Personal/Personal.xcodeproj; sourceTree = "<group>"; };
@@ -126,6 +139,7 @@
 		F07F269B290BD9240060FBCE /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		F096E5AE2909C546000BE53A /* Models.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Models.xcodeproj; path = Modules/Models/Models.xcodeproj; sourceTree = "<group>"; };
 		F096E5BB2909C652000BE53A /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
+		F0BF8BDE290EBD9600D271CD /* Resources.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Resources.xcodeproj; path = Modules/Resources/Resources.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +149,8 @@
 			files = (
 				F096E5B82909C55C000BE53A /* Models.framework in Frameworks */,
 				F04DE4A3290AEBC900DD4C39 /* Discover.framework in Frameworks */,
+				F01C27FF290EB7FD0060B60B /* Networking.framework in Frameworks */,
 				F04DE4A5290AEBCD00DD4C39 /* Personal.framework in Frameworks */,
-				F04DE3DF290AE49800DD4C39 /* Resources.framework in Frameworks */,
 				F04DE4A7290AEBDF00DD4C39 /* Search.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +158,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F01C27E5290EB6BE0060B60B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F01C27EA290EB6BE0060B60B /* Networking.framework */,
+				F01C27EC290EB6BE0060B60B /* NetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F02455B829083DC20075B2E3 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,14 +185,6 @@
 				F053A89528FB479A00429628 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		F04DE3C7290AE26300DD4C39 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F04DE3CB290AE26300DD4C39 /* Resources.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		F04DE41D290AEA6000DD4C39 /* Products */ = {
@@ -207,8 +222,9 @@
 				F04DE41C290AEA6000DD4C39 /* Discover.xcodeproj */,
 				F04DE449290AEAD300DD4C39 /* Search.xcodeproj */,
 				F04DE488290AEB7B00DD4C39 /* Personal.xcodeproj */,
+				F01C27E4290EB6BE0060B60B /* Networking.xcodeproj */,
 				F096E5AE2909C546000BE53A /* Models.xcodeproj */,
-				F04DE3C6290AE26300DD4C39 /* Resources.xcodeproj */,
+				F0BF8BDE290EBD9600D271CD /* Resources.xcodeproj */,
 				F053A88928FB479800429628 /* Cookbook */,
 				F053A88828FB479800429628 /* Products */,
 				F096E5B72909C55C000BE53A /* Frameworks */,
@@ -246,6 +262,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0BF8BDF290EBD9600D271CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0BF8BE3290EBD9600D271CD /* Resources.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,12 +330,16 @@
 					ProjectRef = F096E5AE2909C546000BE53A /* Models.xcodeproj */;
 				},
 				{
+					ProductGroup = F01C27E5290EB6BE0060B60B /* Products */;
+					ProjectRef = F01C27E4290EB6BE0060B60B /* Networking.xcodeproj */;
+				},
+				{
 					ProductGroup = F04DE489290AEB7B00DD4C39 /* Products */;
 					ProjectRef = F04DE488290AEB7B00DD4C39 /* Personal.xcodeproj */;
 				},
 				{
-					ProductGroup = F04DE3C7290AE26300DD4C39 /* Products */;
-					ProjectRef = F04DE3C6290AE26300DD4C39 /* Resources.xcodeproj */;
+					ProductGroup = F0BF8BDF290EBD9600D271CD /* Products */;
+					ProjectRef = F0BF8BDE290EBD9600D271CD /* Resources.xcodeproj */;
 				},
 				{
 					ProductGroup = F04DE44A290AEAD300DD4C39 /* Products */;
@@ -326,11 +354,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		F04DE3CB290AE26300DD4C39 /* Resources.framework */ = {
+		F01C27EA290EB6BE0060B60B /* Networking.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = Resources.framework;
-			remoteRef = F04DE3CA290AE26300DD4C39 /* PBXContainerItemProxy */;
+			path = Networking.framework;
+			remoteRef = F01C27E9290EB6BE0060B60B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F01C27EC290EB6BE0060B60B /* NetworkingTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NetworkingTests.xctest;
+			remoteRef = F01C27EB290EB6BE0060B60B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		F04DE422290AEA6000DD4C39 /* Discover.framework */ = {
@@ -389,6 +424,13 @@
 			remoteRef = F096E5B52909C546000BE53A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		F0BF8BE3290EBD9600D271CD /* Resources.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Resources.framework;
+			remoteRef = F0BF8BE2290EBD9600D271CD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -396,7 +438,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F049CE352909119D0078E9E1 /* README.md in Resources */,
 				F053A89728FB479A00429628 /* LaunchScreen.storyboard in Resources */,
 				F053A89428FB479A00429628 /* Assets.xcassets in Resources */,
 			);
