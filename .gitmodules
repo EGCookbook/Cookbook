@@ -10,9 +10,9 @@
 [submodule "Modules/Discover"]
 	path = Modules/Discover
 	url = https://github.com/iCookbook/Discover
-[submodule "Modules/Resources"]
-	path = Modules/Resources
-	url = https://github.com/iCookbook/Resources
 [submodule "Modules/Networking"]
 	path = Modules/Networking
 	url = https://github.com/iCookbook/Networking
+[submodule "Modules/Resources"]
+	path = Modules/Resources
+	url = https://github.com/iCookbook/Resources
