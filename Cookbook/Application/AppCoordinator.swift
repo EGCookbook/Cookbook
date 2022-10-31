@@ -15,7 +15,7 @@ final class AppCoordinator {
     
     // MARK: - Private Properties
     
-    /// `UIWindow` of the application, provided from the ``SceneDelegate``
+    /// `UIWindow` of the application, provided from the ``AppDelegate``
     private let window: UIWindow
     /// Root view controller of the application
     private let tabBarController = UITabBarController()
@@ -44,21 +44,21 @@ final class AppCoordinator {
 
 private extension AppCoordinator {
     func setupDiscover() {
-        let context = DiscoverContext(moduleOutput: nil)
+        let context = DiscoverContext(moduleDependency: ServiceLocator.shared.resolveNetworkManager())
         let assembly = DiscoverAssembly.assemble(with: context)
         let discoverViewController = createNavController(viewController: assembly.viewController, itemName: Texts.Discover.title, itemImage: Images.TabBarItems.discover)
         viewControllers.append(discoverViewController)
     }
     
     func setupSearch() {
-        let context = SearchContext(moduleOutput: nil)
+        let context = SearchContext(moduleDependency: ServiceLocator.shared.resolveNetworkManager())
         let assembly = SearchAssembly.assemble(with: context)
         let historyViewController = createNavController(viewController: assembly.viewController, itemName: Texts.Search.title, itemImage: Images.TabBarItems.search)
         viewControllers.append(historyViewController)
     }
-
+    
     func setupPersonal() {
-        let context = PersonalContext(moduleOutput: nil)
+        let context = PersonalContext(moduleDependency: ServiceLocator.shared.resolveCoreDataManager())
         let assembly = PersonalAssembly.assemble(with: context)
         let analyticsViewController = createNavController(viewController: assembly.viewController, itemName: Texts.Personal.title, itemImage: Images.TabBarItems.person)
         viewControllers.append(analyticsViewController)
