@@ -1,5 +1,5 @@
 //
-//  AppDIContainer.swift
+//  ServiceLocator.swift
 //  Cookbook
 //
 //  Created by Егор Бадмаев on 28.10.2022.
@@ -8,11 +8,11 @@
 import Networking
 import Persistence
 
-final class AppDIContainer {
+final class ServiceLocator {
     
     // MARK: - Public Properties
     
-    public static let shared = AppDIContainer()
+    public static let shared = ServiceLocator()
     
     // MARK: - Private Properties
     

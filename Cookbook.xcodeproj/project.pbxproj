@@ -19,11 +19,11 @@
 		F053A88B28FB479800429628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053A88A28FB479800429628 /* AppDelegate.swift */; };
 		F053A89428FB479A00429628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F053A89328FB479A00429628 /* Assets.xcassets */; };
 		F053A89728FB479A00429628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F053A89528FB479A00429628 /* LaunchScreen.storyboard */; };
-		F07F269C290BD9240060FBCE /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07F269B290BD9240060FBCE /* AppDIContainer.swift */; };
+		F07F269C290BD9240060FBCE /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07F269B290BD9240060FBCE /* ServiceLocator.swift */; };
 		F096E5B82909C55C000BE53A /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F096E5B42909C546000BE53A /* Models.framework */; };
 		F096E5B92909C55C000BE53A /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F096E5B42909C546000BE53A /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F096E5BC2909C652000BE53A /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = F096E5BB2909C652000BE53A /* Documentation.docc */; };
-		F0BF8C17290EC1A500D271CD /* AppDIContainterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF8C16290EC1A500D271CD /* AppDIContainterTests.swift */; };
+		F0BF8C17290EC1A500D271CD /* ServiceLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF8C16290EC1A500D271CD /* ServiceLocatorTests.swift */; };
 		F0BF8C91290ED19700D271CD /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BF8BE3290EBD9600D271CD /* Resources.framework */; platformFilter = ios; };
 		F0BF8C92290ED19700D271CD /* Resources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0BF8BE3290EBD9600D271CD /* Resources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F0BF8C93290ED19D00D271CD /* Persistence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BF8C89290ECB9600D271CD /* Persistence.framework */; platformFilter = ios; };
@@ -164,12 +164,12 @@
 		F053A89328FB479A00429628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F053A89628FB479A00429628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F053A89828FB479A00429628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F07F269B290BD9240060FBCE /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		F07F269B290BD9240060FBCE /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		F096E5AE2909C546000BE53A /* Models.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Models.xcodeproj; path = Modules/Models/Models.xcodeproj; sourceTree = "<group>"; };
 		F096E5BB2909C652000BE53A /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 		F0BF8BDE290EBD9600D271CD /* Resources.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Resources.xcodeproj; path = Modules/Resources/Resources.xcodeproj; sourceTree = "<group>"; };
 		F0BF8C01290EC17000D271CD /* CookbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0BF8C16290EC1A500D271CD /* AppDIContainterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainterTests.swift; sourceTree = "<group>"; };
+		F0BF8C16290EC1A500D271CD /* ServiceLocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocatorTests.swift; sourceTree = "<group>"; };
 		F0BF8C7D290ECB9600D271CD /* Persistence.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Persistence.xcodeproj; path = Modules/Persistence/Persistence.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,7 +212,7 @@
 			children = (
 				F053A88A28FB479800429628 /* AppDelegate.swift */,
 				F04DE34A290ADEAC00DD4C39 /* AppCoordinator.swift */,
-				F07F269B290BD9240060FBCE /* AppDIContainer.swift */,
+				F07F269B290BD9240060FBCE /* ServiceLocator.swift */,
 				F053A89828FB479A00429628 /* Info.plist */,
 			);
 			path = Application;
@@ -326,7 +326,7 @@
 		F0BF8C15290EC18E00D271CD /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				F0BF8C16290EC1A500D271CD /* AppDIContainterTests.swift */,
+				F0BF8C16290EC1A500D271CD /* ServiceLocatorTests.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -566,7 +566,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F07F269C290BD9240060FBCE /* AppDIContainer.swift in Sources */,
+				F07F269C290BD9240060FBCE /* ServiceLocator.swift in Sources */,
 				F04DE34B290ADEAC00DD4C39 /* AppCoordinator.swift in Sources */,
 				F096E5BC2909C652000BE53A /* Documentation.docc in Sources */,
 				F053A88B28FB479800429628 /* AppDelegate.swift in Sources */,
@@ -577,7 +577,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0BF8C17290EC1A500D271CD /* AppDIContainterTests.swift in Sources */,
+				F0BF8C17290EC1A500D271CD /* ServiceLocatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
