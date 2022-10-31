@@ -8,6 +8,7 @@
 import Networking
 import Persistence
 
+/// Class responsible for providing dependencies of the application.
 final class ServiceLocator {
     
     // MARK: - Public Properties
@@ -18,6 +19,9 @@ final class ServiceLocator {
     
     /// Core Data model's specified name.
     private let coreDataContainerName = "Cookbook"
+    /// Core Data Manager. It is responsible for all operations connected with persistance.
+    private lazy var coreDataManager: CoreDataManagerProtocol = CoreDataManager(containerName: coreDataContainerName)
+    
     /// `URLSessionConfiguration` for ``NetworkManager``.
     private let networkConfiguration = URLSessionConfiguration.default
     /// Network Manager. It is responsible for all network requests of this app.
@@ -26,8 +30,6 @@ final class ServiceLocator {
         let networkManager = NetworkManager(session: urlSession)
         return networkManager
     }()
-    /// Core Data Manager. It is responsible for all operations connected with persistance.
-    private lazy var coreDataManager: CoreDataManagerProtocol = CoreDataManager(containerName: coreDataContainerName)
     
     // MARK: - Init
     
