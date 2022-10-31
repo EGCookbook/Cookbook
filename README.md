@@ -1,3 +1,3 @@
 # Cookbook
 
-🍱 Recipes application
+Recipes application
