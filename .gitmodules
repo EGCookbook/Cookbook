@@ -13,9 +13,6 @@
 [submodule "Modules/Networking"]
 	path = Modules/Networking
 	url = https://github.com/iCookbook/Networking
-[submodule "Modules/Resources"]
-	path = Modules/Resources
-	url = https://github.com/iCookbook/Resources
 [submodule "Modules/Persistence"]
 	path = Modules/Persistence
 	url = https://github.com/iCookbook/Persistence

@@ -1,0 +1,18 @@
+/*
+  Localizable.strings
+  Resources
+
+  Created by Егор Бадмаев on 27.10.2022.
+  
+*/
+
+// Discover
+discover = "Сегодня";
+dishOfTheDay = "Блюдо дня";
+mockRecipeTitle = "вкусным блюдом";
+
+// Search
+search = "Поиск";
+
+// Personal
+personal = "Личное";
