@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Cookbook/Pods-Cookbook-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CommonUI/CommonUI.framework
+${BUILT_PRODUCTS_DIR}/Resources/Resources.framework

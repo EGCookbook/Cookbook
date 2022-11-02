@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5ACA6595BFD83F9765862FEAE4B0F067"
-               BuildableName = "libPods-CookbookTests.a"
-               BlueprintName = "Pods-CookbookTests"
+               BlueprintIdentifier = "DA96FCD54E1B8F6F71A95221DBDBDB0A"
+               BuildableName = "Resources.bundle"
+               BlueprintName = "Resources-Resources"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -1,0 +1,24 @@
+{
+  "name": "CommonUI",
+  "version": "0.1.2",
+  "summary": "Common UI layer.",
+  "homepage": "https://github.com/iCookbook/CommonUI",
+  "authors": {
+    "htmlprogrammist": "60363270+htmlprogrammist@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/iCookbook/CommonUI.git",
+    "tag": "0.1.2"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "CommonUI/**/*.{swift}",
+  "dependencies": {
+    "Resources": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

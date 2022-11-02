@@ -19,3 +19,6 @@
 [submodule "Modules/CommonUI"]
 	path = Modules/CommonUI
 	url = https://github.com/iCookbook/CommonUI
+[submodule "Modules/Resources"]
+	path = Modules/Resources
+	url = https://github.com/iCookbook/Resources

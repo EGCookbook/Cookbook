@@ -1,0 +1,24 @@
+{
+  "name": "Resources",
+  "version": "0.1.8",
+  "summary": "Resources layer of the application.",
+  "homepage": "https://github.com/iCookbook/Resources",
+  "authors": {
+    "htmlprogrammist": "60363270+htmlprogrammist@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/iCookbook/Resources.git",
+    "tag": "0.1.8"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "Resources/**/*.{swift}",
+  "resource_bundles": {
+    "Resources": [
+      "Resources/**/*"
+    ]
+  },
+  "swift_version": "5.0"
+}

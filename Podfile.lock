@@ -1,3 +1,22 @@
-PODFILE CHECKSUM: 6e0c5bd7e4553b5abaf59b1df143eee37fd5b59b
+PODS:
+  - CommonUI (0.1.2):
+    - Resources
+  - Resources (0.1.8)
+
+DEPENDENCIES:
+  - CommonUI (from `Modules/CommonUI`)
+  - Resources (from `Modules/Resources`)
+
+EXTERNAL SOURCES:
+  CommonUI:
+    :path: Modules/CommonUI
+  Resources:
+    :path: Modules/Resources
+
+SPEC CHECKSUMS:
+  CommonUI: c2c6957697e16d6857a074b161e7ae4b0625bfe3
+  Resources: 6c4ad6d7621c95f2cb1def66ac10c1f39327791e
+
+PODFILE CHECKSUM: e3a437082dd86b93e3367d545f7b1a24564081ac
 
 COCOAPODS: 1.11.3
