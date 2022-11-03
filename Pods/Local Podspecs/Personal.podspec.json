@@ -1,0 +1,30 @@
+{
+  "name": "Personal",
+  "version": "0.1.0",
+  "summary": "'Personal' module.",
+  "homepage": "https://github.com/iCookbook/Personal",
+  "authors": {
+    "htmlprogrammist": "60363270+htmlprogrammist@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/iCookbook/Personal.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "Personal/**/*.{swift}",
+  "dependencies": {
+    "CommonUI": [
+
+    ],
+    "Resources": [
+
+    ],
+    "Persistence": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

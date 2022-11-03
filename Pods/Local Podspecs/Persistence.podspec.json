@@ -1,0 +1,20 @@
+{
+  "name": "Persistence",
+  "version": "0.1.1",
+  "summary": "Persistence layer of the project.",
+  "homepage": "https://github.com/iCookbook/Persistence",
+  "authors": {
+    "htmlprogrammist": "60363270+htmlprogrammist@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/iCookbook/Persistence.git",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "Persistence/**/*.{swift}",
+  "resources": "Persistence/CoreData/**/*.{xcdatamodeld}",
+  "swift_version": "5.0"
+}

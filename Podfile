@@ -4,6 +4,8 @@ platform :ios, '12.0'
 workspace 'Cookbook.xcworkspace'
 project 'Cookbook.xcodeproj'
 
+# Common/Services/Shared layers
+
 def commonui_pod
   pod 'CommonUI', :path => 'Modules/CommonUI'
 end
@@ -16,15 +18,40 @@ def networking_pod
   pod 'Networking', :path => 'Modules/Networking'
 end
 
+def persistence_pod
+  pod 'Persistence', :path => 'Modules/Persistence'
+end
+
 def resources_pod
   pod 'Resources', :path => 'Modules/Resources'
 end
+
+# Feature/App Modules
+
+def discover_pod
+  pod 'Discover', :path => 'Modules/Discover'
+end
+
+def search_pod
+  pod 'Search', :path => 'Modules/Search'
+end
+
+def personal_pod
+  pod 'Personal', :path => 'Modules/Personal'
+end
+
+# DevPods
 
 def development_pods
   commonui_pod
   models_pod
   networking_pod
+  persistence_pod
   resources_pod
+  
+  discover_pod
+  search_pod
+  personal_pod
 end
 
 target 'Cookbook' do
@@ -44,6 +71,8 @@ target 'CookbookUITests' do
   # Pods for testing
 end
 
+# Common/Services/Shared layers
+
 target 'CommonUI_Example' do
   use_frameworks!
   project 'Modules/CommonUI/Example/CommonUI.xcodeproj'
@@ -58,9 +87,39 @@ target 'Networking_Example' do
   networking_pod
 end
 
+target 'Persistence_Example' do
+  use_frameworks!
+  project 'Modules/Persistence/Example/Persistence.xcodeproj'
+  
+  persistence_pod
+end
+
 target 'Resources_Example' do
   use_frameworks!
   project 'Modules/Resources/Example/Resources.xcodeproj'
   
   resources_pod
+end
+
+# Feature/App Modules
+
+target 'Discover_Example' do
+  use_frameworks!
+  project 'Modules/Discover/Example/Discover.xcodeproj'
+  
+  discover_pod
+end
+
+target 'Search_Example' do
+  use_frameworks!
+  project 'Modules/Search/Example/Search.xcodeproj'
+  
+  discover_pod
+end
+
+target 'Personal_Example' do
+  use_frameworks!
+  project 'Modules/Personal/Example/Personal.xcodeproj'
+  
+  discover_pod
 end

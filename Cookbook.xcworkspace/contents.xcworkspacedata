@@ -16,4 +16,10 @@
    <FileRef
       location = "group:Modules/Networking/Example/Networking.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Modules/Persistence/Example/Persistence.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Discover/Example/Discover.xcodeproj">
+   </FileRef>
 </Workspace>
