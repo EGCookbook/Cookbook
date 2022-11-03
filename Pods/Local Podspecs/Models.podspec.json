@@ -1,0 +1,19 @@
+{
+  "name": "Models",
+  "version": "1.2.0",
+  "summary": "Models layer of the project.",
+  "homepage": "https://github.com/iCookbook/Models",
+  "authors": {
+    "htmlprogrammist": "60363270+htmlprogrammist@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/iCookbook/Models.git",
+    "tag": "1.2.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "Models/**/*.{swift}",
+  "swift_version": "5.0"
+}

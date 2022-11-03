@@ -8,12 +8,22 @@ def commonui_pod
   pod 'CommonUI', :path => 'Modules/CommonUI'
 end
 
+def models_pod
+  pod 'Models', :path => 'Modules/Models'
+end
+
+def networking_pod
+  pod 'Networking', :path => 'Modules/Networking'
+end
+
 def resources_pod
   pod 'Resources', :path => 'Modules/Resources'
 end
 
 def development_pods
   commonui_pod
+  models_pod
+  networking_pod
   resources_pod
 end
 
@@ -39,6 +49,13 @@ target 'CommonUI_Example' do
   project 'Modules/CommonUI/Example/CommonUI.xcodeproj'
   
   commonui_pod
+end
+
+target 'Networking_Example' do
+  use_frameworks!
+  project 'Modules/Networking/Example/Networking.xcodeproj'
+  
+  networking_pod
 end
 
 target 'Resources_Example' do

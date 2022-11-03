@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Models.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Networking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-CommonUI_Example.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -25,6 +35,11 @@
 			<false/>
 		</dict>
 		<key>Pods-CookbookUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Networking_Example.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
