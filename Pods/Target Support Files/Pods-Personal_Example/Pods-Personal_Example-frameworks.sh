@@ -177,16 +177,18 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CommonUI/CommonUI.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Discover/Discover.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Models/Models.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Networking/Networking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Persistence/Persistence.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Personal/Personal.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Resources/Resources.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CommonUI/CommonUI.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Discover/Discover.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Models/Models.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Networking/Networking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Persistence/Persistence.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Personal/Personal.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Resources/Resources.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

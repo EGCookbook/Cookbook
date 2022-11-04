@@ -4,7 +4,7 @@ platform :ios, '12.0'
 workspace 'Cookbook.xcworkspace'
 project 'Cookbook.xcodeproj'
 
-# Common/Services/Shared layers
+# Common & Services layers
 
 def commonui_pod
   pod 'CommonUI', :path => 'Modules/CommonUI'
@@ -26,17 +26,17 @@ def resources_pod
   pod 'Resources', :path => 'Modules/Resources'
 end
 
-# Feature/App Modules
+# Features/App Modules
 
-def discover_pod
+def discover_module_pod
   pod 'Discover', :path => 'Modules/Discover'
 end
 
-def search_pod
+def search_module_pod
   pod 'Search', :path => 'Modules/Search'
 end
 
-def personal_pod
+def personal_module_pod
   pod 'Personal', :path => 'Modules/Personal'
 end
 
@@ -49,9 +49,9 @@ def development_pods
   persistence_pod
   resources_pod
   
-  discover_pod
-  search_pod
-  personal_pod
+  discover_module_pod
+  search_module_pod
+  personal_module_pod
 end
 
 target 'Cookbook' do
@@ -107,19 +107,20 @@ target 'Discover_Example' do
   use_frameworks!
   project 'Modules/Discover/Example/Discover.xcodeproj'
   
-  discover_pod
+  discover_module_pod
+  networking_pod
 end
 
 target 'Search_Example' do
   use_frameworks!
   project 'Modules/Search/Example/Search.xcodeproj'
   
-  discover_pod
+  search_module_pod
 end
 
 target 'Personal_Example' do
   use_frameworks!
   project 'Modules/Personal/Example/Personal.xcodeproj'
   
-  discover_pod
+  personal_module_pod
 end
