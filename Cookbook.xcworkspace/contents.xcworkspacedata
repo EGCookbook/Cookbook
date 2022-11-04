@@ -22,4 +22,10 @@
    <FileRef
       location = "group:Modules/Discover/Example/Discover.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Modules/Personal/Example/Personal.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Search/Example/Search.xcodeproj">
+   </FileRef>
 </Workspace>
