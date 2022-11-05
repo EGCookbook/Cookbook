@@ -1,20 +1,20 @@
 {
-  "name": "Discover",
-  "version": "0.2.3",
-  "summary": "'Discover' module.",
-  "homepage": "https://github.com/iCookbook/Discover",
+  "name": "RecipeDetails",
+  "version": "0.1.0",
+  "summary": "'RecipeDetails' module.",
+  "homepage": "https://github.com/htmlprogrammist/RecipeDetails",
   "authors": {
     "htmlprogrammist": "60363270+htmlprogrammist@users.noreply.github.com"
   },
   "source": {
-    "git": "https://github.com/iCookbook/Discover.git",
-    "tag": "0.2.3"
+    "git": "https://github.com/htmlprogrammist/RecipeDetails.git",
+    "tag": "0.1.0"
   },
   "platforms": {
     "ios": "12.0"
   },
   "swift_versions": "5.0",
-  "source_files": "Discover/**/*.{swift}",
+  "source_files": "RecipeDetails/**/*.{swift}",
   "dependencies": {
     "CommonUI": [
 
@@ -22,13 +22,7 @@
     "Resources": [
 
     ],
-    "Networking": [
-
-    ],
     "Models": [
-
-    ],
-    "RecipeDetails": [
 
     ]
   },

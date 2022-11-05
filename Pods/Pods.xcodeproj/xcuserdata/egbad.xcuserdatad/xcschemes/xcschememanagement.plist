@@ -74,12 +74,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-RecipeDetails_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Resources_Example.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-Search_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RecipeDetails.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

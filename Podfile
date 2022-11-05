@@ -32,6 +32,10 @@ def discover_module_pod
   pod 'Discover', :path => 'Modules/Discover'
 end
 
+def recipedetails_module_pod
+  pod 'RecipeDetails', :path => 'Modules/RecipeDetails'
+end
+
 def search_module_pod
   pod 'Search', :path => 'Modules/Search'
 end
@@ -50,6 +54,7 @@ def development_pods
   resources_pod
   
   discover_module_pod
+  recipedetails_module_pod
   search_module_pod
   personal_module_pod
 end
@@ -108,6 +113,14 @@ target 'Discover_Example' do
   project 'Modules/Discover/Example/Discover.xcodeproj'
   
   discover_module_pod
+  networking_pod
+end
+
+target 'RecipeDetails_Example' do
+  use_frameworks!
+  project 'Modules/RecipeDetails/Example/RecipeDetails.xcodeproj'
+  
+  recipedetails_module_pod
   networking_pod
 end
 

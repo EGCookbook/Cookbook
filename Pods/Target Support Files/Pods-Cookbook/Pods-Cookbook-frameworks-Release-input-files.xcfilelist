@@ -5,5 +5,6 @@ ${BUILT_PRODUCTS_DIR}/Models/Models.framework
 ${BUILT_PRODUCTS_DIR}/Networking/Networking.framework
 ${BUILT_PRODUCTS_DIR}/Persistence/Persistence.framework
 ${BUILT_PRODUCTS_DIR}/Personal/Personal.framework
+${BUILT_PRODUCTS_DIR}/RecipeDetails/RecipeDetails.framework
 ${BUILT_PRODUCTS_DIR}/Resources/Resources.framework
 ${BUILT_PRODUCTS_DIR}/Search/Search.framework
