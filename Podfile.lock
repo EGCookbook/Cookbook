@@ -1,5 +1,5 @@
 PODS:
-  - CommonUI (0.3.7):
+  - CommonUI (0.4.0):
     - Models
     - Networking
     - Resources
@@ -16,7 +16,7 @@ PODS:
     - CommonUI
     - Persistence
     - Resources
-  - Resources (0.1.12)
+  - Resources (0.1.13)
   - Search (0.1.0):
     - Models
     - Networking
@@ -51,13 +51,13 @@ EXTERNAL SOURCES:
     :path: Modules/Search
 
 SPEC CHECKSUMS:
-  CommonUI: a4011b1572c784492579854bc691038cc49d3a63
+  CommonUI: 6a4f49c05a5ad302602b52de816d8223150e5acd
   Discover: 2b4e908707e5af4e9c403399e4d236379a1843d1
   Models: 506ddad56d543ce77053ac95553ec13171a8de27
   Networking: aeabff054be48fa69cfb93616a747d822f251024
   Persistence: 247e4c2ebab89c9b4b382a39520df1e861161c22
   Personal: 809069303b126736c77bd0e8b9d96d0d65ffc646
-  Resources: 1058381cf62d143dfd836636401c23b4952c4e4a
+  Resources: 32ca9d2e118e54b59b0c3ae2144e3fa50cc2a679
   Search: 8c91365acb8cd7790a18f3ea6334633a71e7485f
 
 PODFILE CHECKSUM: f3b789a95c26ebbf7345e3f924e2716873b4bf39

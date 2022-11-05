@@ -1,6 +1,6 @@
 {
   "name": "Resources",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "summary": "Resources layer of the application.",
   "homepage": "https://github.com/iCookbook/Resources",
   "authors": {
@@ -8,7 +8,7 @@
   },
   "source": {
     "git": "https://github.com/iCookbook/Resources.git",
-    "tag": "0.1.12"
+    "tag": "0.1.13"
   },
   "platforms": {
     "ios": "12.0"

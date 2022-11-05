@@ -22,3 +22,6 @@
 [submodule "Modules/Resources"]
 	path = Modules/Resources
 	url = https://github.com/iCookbook/Resources
+[submodule "Modules/RecipeDetails"]
+	path = Modules/RecipeDetails
+	url = https://github.com/iCookbook/RecipeDetails
