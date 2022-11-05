@@ -1,6 +1,6 @@
 {
   "name": "Networking",
-  "version": "0.1.0",
+  "version": "2.0.2",
   "summary": "Layer responsible for all networking of the application.",
   "homepage": "https://github.com/iCookbook/Networking",
   "authors": {
@@ -8,7 +8,7 @@
   },
   "source": {
     "git": "https://github.com/iCookbook/Networking.git",
-    "tag": "0.1.0"
+    "tag": "2.0.2"
   },
   "platforms": {
     "ios": "12.0"
