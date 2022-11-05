@@ -2,12 +2,12 @@
   "name": "RecipeDetails",
   "version": "0.1.0",
   "summary": "'RecipeDetails' module.",
-  "homepage": "https://github.com/htmlprogrammist/RecipeDetails",
+  "homepage": "https://github.com/iCookbook/RecipeDetails",
   "authors": {
     "htmlprogrammist": "60363270+htmlprogrammist@users.noreply.github.com"
   },
   "source": {
-    "git": "https://github.com/htmlprogrammist/RecipeDetails.git",
+    "git": "https://github.com/iCookbook/RecipeDetails.git",
     "tag": "0.1.0"
   },
   "platforms": {
