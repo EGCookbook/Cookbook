@@ -30,6 +30,8 @@ final class AppCoordinator {
     
     /// This method setup tab bar controller with 3 modules and set root view controller for the `UIWindow`
     func start() {
+        Fonts.registerFonts()
+        
         setupDiscover()
         setupSearch()
         setupPersonal()
@@ -69,6 +71,8 @@ private extension AppCoordinator {
         let navController = UINavigationController(rootViewController: viewController)
         navController.tabBarItem = UITabBarItem(title: itemName, image: itemImage, tag: 0)
         navController.navigationBar.prefersLargeTitles = true
+        navController.navigationBar.titleTextAttributes = [.font: Fonts.headline()]
+        navController.navigationBar.largeTitleTextAttributes = [.font: Fonts.title()]
         return navController
     }
 }
