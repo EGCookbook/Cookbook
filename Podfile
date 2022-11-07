@@ -121,7 +121,9 @@ target 'RecipeDetails_Example' do
   project 'Modules/RecipeDetails/Example/RecipeDetails.xcodeproj'
   
   recipedetails_module_pod
-  networking_pod
+  persistence_pod
+  commonui_pod
+  resources_pod
 end
 
 target 'Search_Example' do

@@ -3,7 +3,7 @@ PODS:
     - Models
     - Networking
     - Resources
-  - Discover (0.2.3):
+  - Discover (0.2.4):
     - CommonUI
     - Models
     - Networking
@@ -22,7 +22,7 @@ PODS:
     - Models
     - Persistence
     - Resources
-  - Resources (0.1.15)
+  - Resources (0.2.0)
   - Search (0.1.0):
     - Models
     - Networking
@@ -61,15 +61,15 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CommonUI: a4011b1572c784492579854bc691038cc49d3a63
-  Discover: eec6d1d5e157e2b92ed66508656338059101f099
+  Discover: 4fa5408a3e13d30d4bde06e58cbd076c0bca85e5
   Models: 16edf0010b4997603aaf7d2673c3c82604e4b27e
   Networking: aeabff054be48fa69cfb93616a747d822f251024
   Persistence: 247e4c2ebab89c9b4b382a39520df1e861161c22
   Personal: 809069303b126736c77bd0e8b9d96d0d65ffc646
   RecipeDetails: 42119df7b3bd97b5021c14cccc8e2a95a37ee530
-  Resources: b7ee98eb943289e60fec1d74fbdd64531e88456c
+  Resources: 9ed68cf3fc65d9aa84cba332dc940bcb313b3269
   Search: 8c91365acb8cd7790a18f3ea6334633a71e7485f
 
-PODFILE CHECKSUM: ae4181b1aad15f8122e30145588e2d74b17933f0
+PODFILE CHECKSUM: 4812ec7a6b52890294de6ab0392aae759cd8b8fc
 
 COCOAPODS: 1.11.3
