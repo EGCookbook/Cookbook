@@ -12,12 +12,13 @@ PODS:
   - Models (2.0.0)
   - Networking (2.0.2):
     - Models
-  - Persistence (1.3.0)
+  - Persistence (1.5.0):
+    - Models
   - Personal (0.1.0):
     - CommonUI
     - Persistence
     - Resources
-  - RecipeDetails (0.1.0):
+  - RecipeDetails (1.0.0):
     - CommonUI
     - Models
     - Persistence
@@ -64,9 +65,9 @@ SPEC CHECKSUMS:
   Discover: 4fa5408a3e13d30d4bde06e58cbd076c0bca85e5
   Models: 16edf0010b4997603aaf7d2673c3c82604e4b27e
   Networking: aeabff054be48fa69cfb93616a747d822f251024
-  Persistence: 247e4c2ebab89c9b4b382a39520df1e861161c22
+  Persistence: a575ff102ff4188703eb3ed800ecd14ee5faca42
   Personal: 809069303b126736c77bd0e8b9d96d0d65ffc646
-  RecipeDetails: 42119df7b3bd97b5021c14cccc8e2a95a37ee530
+  RecipeDetails: 85deafb5d71da151c900e2f3b39e9af58442d080
   Resources: 9ed68cf3fc65d9aa84cba332dc940bcb313b3269
   Search: 8c91365acb8cd7790a18f3ea6334633a71e7485f
 
