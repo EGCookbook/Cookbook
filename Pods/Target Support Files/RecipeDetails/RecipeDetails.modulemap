@@ -1,0 +1,6 @@
+framework module RecipeDetails {
+  umbrella header "RecipeDetails-umbrella.h"
+
+  export *
+  module * { export * }
+}

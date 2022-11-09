@@ -1,0 +1,6 @@
+framework module Pods_Persistence_Example {
+  umbrella header "Pods-Persistence_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "RecipeDetails",
+  "version": "1.0.2",
+  "summary": "'RecipeDetails' module.",
+  "homepage": "https://github.com/iCookbook/RecipeDetails",
+  "authors": {
+    "htmlprogrammist": "60363270+htmlprogrammist@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/iCookbook/RecipeDetails.git",
+    "tag": "1.0.2"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "RecipeDetails/**/*.{swift}",
+  "dependencies": {
+    "CommonUI": [
+
+    ],
+    "Resources": [
+
+    ],
+    "Models": [
+
+    ],
+    "Persistence": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

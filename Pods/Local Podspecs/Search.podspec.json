@@ -1,0 +1,30 @@
+{
+  "name": "Search",
+  "version": "0.1.0",
+  "summary": "'Search' module.",
+  "homepage": "https://github.com/iCookbook/Search",
+  "authors": {
+    "htmlprogrammist": "60363270+htmlprogrammist@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/iCookbook/Search.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "Search/**/*.{swift}",
+  "dependencies": {
+    "Resources": [
+
+    ],
+    "Networking": [
+
+    ],
+    "Models": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

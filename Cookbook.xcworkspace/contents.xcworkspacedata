@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Cookbook.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/CommonUI/Example/CommonUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Resources/Example/Resources.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Networking/Example/Networking.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Persistence/Example/Persistence.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Discover/Example/Discover.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Personal/Example/Personal.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Search/Example/Search.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/RecipeDetails/Example/RecipeDetails.xcodeproj">
+   </FileRef>
+</Workspace>
