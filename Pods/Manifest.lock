@@ -18,7 +18,7 @@ PODS:
     - CommonUI
     - Persistence
     - Resources
-  - RecipeDetails (1.0.0):
+  - RecipeDetails (1.0.2):
     - CommonUI
     - Models
     - Persistence
@@ -67,7 +67,7 @@ SPEC CHECKSUMS:
   Networking: aeabff054be48fa69cfb93616a747d822f251024
   Persistence: a575ff102ff4188703eb3ed800ecd14ee5faca42
   Personal: 809069303b126736c77bd0e8b9d96d0d65ffc646
-  RecipeDetails: 85deafb5d71da151c900e2f3b39e9af58442d080
+  RecipeDetails: 9e83b73134d5290a514fc0f7d68a547e3e6e307b
   Resources: 9ed68cf3fc65d9aa84cba332dc940bcb313b3269
   Search: 8c91365acb8cd7790a18f3ea6334633a71e7485f
 
