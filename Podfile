@@ -6,6 +6,10 @@ project 'Cookbook.xcodeproj'
 
 # Common & Services layers
 
+def common_pod
+  pod 'Common', :path => 'Modules/Common'
+end
+
 def commonui_pod
   pod 'CommonUI', :path => 'Modules/CommonUI'
 end
@@ -131,6 +135,10 @@ target 'Search_Example' do
   project 'Modules/Search/Example/Search.xcodeproj'
   
   search_module_pod
+  networking_pod
+  models_pod
+  resources_pod
+  recipedetails_module_pod
 end
 
 target 'Personal_Example' do

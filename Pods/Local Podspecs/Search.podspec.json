@@ -1,6 +1,6 @@
 {
   "name": "Search",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "'Search' module.",
   "homepage": "https://github.com/iCookbook/Search",
   "authors": {
@@ -8,7 +8,7 @@
   },
   "source": {
     "git": "https://github.com/iCookbook/Search.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "12.0"
@@ -23,6 +23,12 @@
 
     ],
     "Models": [
+
+    ],
+    "CommonUI": [
+
+    ],
+    "RecipeDetails": [
 
     ]
   },

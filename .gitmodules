@@ -25,3 +25,6 @@
 [submodule "Modules/RecipeDetails"]
 	path = Modules/RecipeDetails
 	url = https://github.com/iCookbook/RecipeDetails
+[submodule "Modules/Common"]
+	path = Modules/Common
+	url = https://github.com/iCookbook/Common
