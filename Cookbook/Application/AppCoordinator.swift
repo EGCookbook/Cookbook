@@ -31,6 +31,7 @@ final class AppCoordinator {
     /// This method setup tab bar controller with 3 modules and set root view controller for the `UIWindow`
     func start() {
         Fonts.registerFonts()
+        window.tintColor = Colors.appColor
         
         setupDiscover()
         setupSearch()
