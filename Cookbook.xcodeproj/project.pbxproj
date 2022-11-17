@@ -19,6 +19,7 @@
 		F096E5BC2909C652000BE53A /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = F096E5BB2909C652000BE53A /* Documentation.docc */; };
 		F09725C62912EBFD000019D9 /* CookbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09725C52912EBFD000019D9 /* CookbookUITests.swift */; };
 		F09725C82912EBFD000019D9 /* CookbookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09725C72912EBFD000019D9 /* CookbookUITestsLaunchTests.swift */; };
+		F0BDA0D42926A96F008923C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0BDA0D62926A96F008923C3 /* InfoPlist.strings */; };
 		F0BF8C17290EC1A500D271CD /* ServiceLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF8C16290EC1A500D271CD /* ServiceLocatorTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,8 @@
 		F09725C32912EBFD000019D9 /* CookbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09725C52912EBFD000019D9 /* CookbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookbookUITests.swift; sourceTree = "<group>"; };
 		F09725C72912EBFD000019D9 /* CookbookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookbookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F0BDA0D52926A96F008923C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F0BDA0D72926A971008923C3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F0BF8C01290EC17000D271CD /* CookbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BF8C16290EC1A500D271CD /* ServiceLocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +140,7 @@
 			children = (
 				F053A89328FB479A00429628 /* Assets.xcassets */,
 				F053A89528FB479A00429628 /* LaunchScreen.storyboard */,
+				F0BDA0D62926A96F008923C3 /* InfoPlist.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -196,18 +200,10 @@
 		F0BF8C02290EC17000D271CD /* CookbookTests */ = {
 			isa = PBXGroup;
 			children = (
-				F0BF8C15290EC18E00D271CD /* Application */,
-			);
-			path = CookbookTests;
-			sourceTree = "<group>";
-		};
-		F0BF8C15290EC18E00D271CD /* Application */ = {
-			isa = PBXGroup;
-			children = (
 				F06E0ACD2911BA2500449168 /* AppCoordinatorTests.swift */,
 				F0BF8C16290EC1A500D271CD /* ServiceLocatorTests.swift */,
 			);
-			path = Application;
+			path = CookbookTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F053A89728FB479A00429628 /* LaunchScreen.storyboard in Resources */,
+				F0BDA0D42926A96F008923C3 /* InfoPlist.strings in Resources */,
 				F053A89428FB479A00429628 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +477,15 @@
 				F04DE4AF290AF22900DD4C39 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F0BDA0D62926A96F008923C3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0BDA0D52926A96F008923C3 /* en */,
+				F0BDA0D72926A971008923C3 /* ru */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
