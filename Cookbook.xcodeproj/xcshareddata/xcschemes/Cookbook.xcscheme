@@ -48,6 +48,16 @@
                ReferencedContainer = "container:Cookbook.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "97D17BC248C5141F69136BDDAF402F28"
+               BuildableName = "Logger-Unit-Tests.xctest"
+               BlueprintName = "Logger-Unit-Tests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

@@ -16,7 +16,6 @@
 		F053A89728FB479A00429628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F053A89528FB479A00429628 /* LaunchScreen.storyboard */; };
 		F06E0ACE2911BA2500449168 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06E0ACD2911BA2500449168 /* AppCoordinatorTests.swift */; };
 		F07F269C290BD9240060FBCE /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07F269B290BD9240060FBCE /* ServiceLocator.swift */; };
-		F096E5BC2909C652000BE53A /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = F096E5BB2909C652000BE53A /* Documentation.docc */; };
 		F09725C62912EBFD000019D9 /* CookbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09725C52912EBFD000019D9 /* CookbookUITests.swift */; };
 		F09725C82912EBFD000019D9 /* CookbookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09725C72912EBFD000019D9 /* CookbookUITestsLaunchTests.swift */; };
 		F0BDA0D42926A96F008923C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0BDA0D62926A96F008923C3 /* InfoPlist.strings */; };
@@ -73,7 +72,6 @@
 		F053A89828FB479A00429628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F06E0ACD2911BA2500449168 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
 		F07F269B290BD9240060FBCE /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
-		F096E5BB2909C652000BE53A /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 		F09725C32912EBFD000019D9 /* CookbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09725C52912EBFD000019D9 /* CookbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookbookUITests.swift; sourceTree = "<group>"; };
 		F09725C72912EBFD000019D9 /* CookbookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookbookUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				F049CE342909119D0078E9E1 /* README.md */,
-				F096E5BB2909C652000BE53A /* Documentation.docc */,
 				F053A88928FB479800429628 /* Cookbook */,
 				F0BF8C02290EC17000D271CD /* CookbookTests */,
 				F09725C42912EBFD000019D9 /* CookbookUITests */,
@@ -431,7 +428,6 @@
 			files = (
 				F07F269C290BD9240060FBCE /* ServiceLocator.swift in Sources */,
 				F04DE34B290ADEAC00DD4C39 /* AppCoordinator.swift in Sources */,
-				F096E5BC2909C652000BE53A /* Documentation.docc in Sources */,
 				F053A88B28FB479800429628 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

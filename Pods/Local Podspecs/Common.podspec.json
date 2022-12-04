@@ -1,0 +1,36 @@
+{
+  "name": "Common",
+  "version": "0.4.2",
+  "summary": "Common logic layer of the project.",
+  "homepage": "https://github.com/iCookbook/Common",
+  "authors": {
+    "htmlprogrammist": "60363270+htmlprogrammist@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/iCookbook/Common.git",
+    "tag": "0.4.2"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "Common/**/*.{swift}",
+  "dependencies": {
+    "Models": [
+
+    ],
+    "Networking": [
+
+    ],
+    "CommonUI": [
+
+    ],
+    "RecipeDetails": [
+
+    ],
+    "Logger": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

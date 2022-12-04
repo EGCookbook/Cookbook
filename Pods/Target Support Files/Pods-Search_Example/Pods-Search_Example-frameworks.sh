@@ -176,7 +176,9 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Common/Common.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CommonUI/CommonUI.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Logger/Logger.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Models/Models.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Networking/Networking.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Persistence/Persistence.framework"
@@ -185,7 +187,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Search/Search.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Common/Common.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CommonUI/CommonUI.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Logger/Logger.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Models/Models.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Networking/Networking.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Persistence/Persistence.framework"

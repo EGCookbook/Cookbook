@@ -13,6 +13,7 @@ final class ServiceLocator {
     
     // MARK: - Public Properties
     
+    /// Shared instance of this class.
     public static let shared = ServiceLocator()
     
     // MARK: - Private Properties
@@ -37,14 +38,16 @@ final class ServiceLocator {
     
     // MARK: - Internal Methods
     
-    /// Method that resolves and provides us ``NetworkManager`` object.
-    /// - Returns: ``NetworkManager`` instance.
+    /// Method that resolves and provides us `NetworkManager` object.
+    ///
+    /// - Returns: `NetworkManager`` instance.
     func resolveNetworkManager() -> NetworkManagerProtocol {
         return networkManager
     }
     
-    /// Method that resolves and provides us ``CoreDataManager`` object.
-    /// - Returns: ``CoreDataManager`` instance.
+    /// Method that resolves and provides us `CoreDataManager` object.
+    ///
+    /// - Returns: `CoreDataManager` instance.
     func resolveCoreDataManager() -> CoreDataManagerProtocol {
         return coreDataManager
     }

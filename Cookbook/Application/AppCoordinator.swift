@@ -72,7 +72,7 @@ private extension AppCoordinator {
         let navController = UINavigationController(rootViewController: viewController)
         navController.tabBarItem = UITabBarItem(title: itemName, image: itemImage, tag: 0)
         navController.navigationBar.largeTitleTextAttributes = [.font: Fonts.largeTitle()]
-        navController.navigationBar.titleTextAttributes = [.font: Fonts.navControllerTitle()]
+        navController.navigationBar.titleTextAttributes = [.font: Fonts.headline()]
         navController.navigationBar.prefersLargeTitles = true
         return navController
     }

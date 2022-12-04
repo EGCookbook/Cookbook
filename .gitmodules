@@ -28,3 +28,6 @@
 [submodule "Modules/Common"]
 	path = Modules/Common
 	url = https://github.com/iCookbook/Common
+[submodule "Modules/Logger"]
+	path = Modules/Logger
+	url = https://github.com/iCookbook/Logger

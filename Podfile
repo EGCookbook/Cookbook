@@ -30,6 +30,10 @@ def resources_pod
   pod 'Resources', :path => 'Modules/Resources'
 end
 
+def logger_pod
+  pod 'Logger', :path => 'Modules/Logger', :testspecs => ['Tests']
+end
+
 # Features/App Modules
 
 def discover_module_pod
@@ -51,11 +55,13 @@ end
 # DevPods
 
 def development_pods
+  common_pod
   commonui_pod
   models_pod
   networking_pod
   persistence_pod
   resources_pod
+  logger_pod
   
   discover_module_pod
   recipedetails_module_pod
@@ -117,7 +123,6 @@ target 'Discover_Example' do
   project 'Modules/Discover/Example/Discover.xcodeproj'
   
   discover_module_pod
-  networking_pod
 end
 
 target 'RecipeDetails_Example' do
@@ -125,9 +130,6 @@ target 'RecipeDetails_Example' do
   project 'Modules/RecipeDetails/Example/RecipeDetails.xcodeproj'
   
   recipedetails_module_pod
-  persistence_pod
-  commonui_pod
-  resources_pod
 end
 
 target 'Search_Example' do
@@ -135,10 +137,6 @@ target 'Search_Example' do
   project 'Modules/Search/Example/Search.xcodeproj'
   
   search_module_pod
-  networking_pod
-  models_pod
-  resources_pod
-  recipedetails_module_pod
 end
 
 target 'Personal_Example' do
@@ -146,4 +144,11 @@ target 'Personal_Example' do
   project 'Modules/Personal/Example/Personal.xcodeproj'
   
   personal_module_pod
+end
+
+target 'Logger_Example' do
+  use_frameworks!
+  project 'Modules/Logger/Example/Logger.xcodeproj'
+  
+  logger_pod
 end

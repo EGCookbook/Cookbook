@@ -1,16 +1,24 @@
 PODS:
-  - CommonUI (0.3.7):
-    - Models
-    - Networking
-    - Resources
-  - Discover (0.2.5):
+  - Common (0.4.2):
     - CommonUI
+    - Logger
     - Models
     - Networking
     - RecipeDetails
+  - CommonUI (0.6.0):
+    - Models
+    - Networking
     - Resources
-  - Models (2.0.0)
-  - Networking (2.0.3):
+  - Discover (0.3.1):
+    - Common
+    - CommonUI
+    - Models
+    - Networking
+    - Resources
+  - Logger (1.1.0)
+  - Logger/Tests (1.1.0)
+  - Models (2.0.3)
+  - Networking (2.1.0):
     - Models
   - Persistence (1.5.1):
     - Models
@@ -18,22 +26,27 @@ PODS:
     - CommonUI
     - Persistence
     - Resources
-  - RecipeDetails (1.2.1):
+  - RecipeDetails (1.3.1):
     - CommonUI
     - Models
     - Persistence
     - Resources
-  - Resources (0.2.1)
-  - Search (0.2.0):
+  - Resources (0.4.0):
+    - Logger
+  - Search (1.0.6):
+    - Common
     - CommonUI
+    - Logger
     - Models
     - Networking
-    - RecipeDetails
     - Resources
 
 DEPENDENCIES:
+  - Common (from `Modules/Common`)
   - CommonUI (from `Modules/CommonUI`)
   - Discover (from `Modules/Discover`)
+  - Logger (from `Modules/Logger`)
+  - Logger/Tests (from `Modules/Logger`)
   - Models (from `Modules/Models`)
   - Networking (from `Modules/Networking`)
   - Persistence (from `Modules/Persistence`)
@@ -43,10 +56,14 @@ DEPENDENCIES:
   - Search (from `Modules/Search`)
 
 EXTERNAL SOURCES:
+  Common:
+    :path: Modules/Common
   CommonUI:
     :path: Modules/CommonUI
   Discover:
     :path: Modules/Discover
+  Logger:
+    :path: Modules/Logger
   Models:
     :path: Modules/Models
   Networking:
@@ -63,16 +80,18 @@ EXTERNAL SOURCES:
     :path: Modules/Search
 
 SPEC CHECKSUMS:
-  CommonUI: a4011b1572c784492579854bc691038cc49d3a63
-  Discover: 910317b0db6d47050ed5123a65370ee34d6afc0d
-  Models: 16edf0010b4997603aaf7d2673c3c82604e4b27e
-  Networking: 428ed1cd2a69d252060a3f69f6915e8f0b05ec3b
+  Common: 80741fe3683f34286dbac2185595cae511f53d53
+  CommonUI: aab82ca3755be84540f59465a788f6ce58124778
+  Discover: a5b51bff96c803e19f3dbbdd96b02625e35825f7
+  Logger: 76a3b6503769bdfd75453861730716556c92dbe8
+  Models: 876f86e389139b173f28cc8c25c239237e356920
+  Networking: 96bb9b38a6199632847a2c75a4f5e97738738531
   Persistence: 488af0c0be6bcc3ee045aeb8976a7454d743b3a4
   Personal: 809069303b126736c77bd0e8b9d96d0d65ffc646
-  RecipeDetails: 4c19efaf4a1ff5f867bfd8c913597874ec5f5322
-  Resources: f62a046c1d22d1af933de6cd72429d1aa8f09c63
-  Search: 032c1760e81d21173c655f1a1257b2fc36bf23f3
+  RecipeDetails: f0422ba870d39b9309889504de092278c8afc8f2
+  Resources: 9424857ccd927d16a70dd5c7fcf60ce2e648aa0f
+  Search: 505c07b61b483535eeb005efc58891f69b0204c8
 
-PODFILE CHECKSUM: e645ebda8a376f26592648c6d534de3653100fdf
+PODFILE CHECKSUM: f5e169ff9d3d1fe080c8b2e7dc70d0ca4788db0f
 
 COCOAPODS: 1.11.3

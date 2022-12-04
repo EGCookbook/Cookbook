@@ -1,6 +1,6 @@
 {
   "name": "Search",
-  "version": "0.2.0",
+  "version": "1.0.6",
   "summary": "'Search' module.",
   "homepage": "https://github.com/iCookbook/Search",
   "authors": {
@@ -8,7 +8,7 @@
   },
   "source": {
     "git": "https://github.com/iCookbook/Search.git",
-    "tag": "0.2.0"
+    "tag": "1.0.6"
   },
   "platforms": {
     "ios": "12.0"
@@ -16,19 +16,22 @@
   "swift_versions": "5.0",
   "source_files": "Search/**/*.{swift}",
   "dependencies": {
-    "Resources": [
-
-    ],
-    "Networking": [
-
-    ],
-    "Models": [
+    "Common": [
 
     ],
     "CommonUI": [
 
     ],
-    "RecipeDetails": [
+    "Models": [
+
+    ],
+    "Networking": [
+
+    ],
+    "Resources": [
+
+    ],
+    "Logger": [
 
     ]
   },
