@@ -27,7 +27,7 @@ git clone --recurse-submodules https://github.com/iCookbook/Cookbook
 | 🗄 Хранение данных | CoreData, UserDefaults |
 | ⛓ Многопоточность | Grand Central Dispatch |
 | 🛠 Тестирование | XCTest |
-| 📱 Версия iOS | iOS 12.0 |
+| 📱 Платформа | iOS 12.0 |
 
 Также стоит упомянуть о некоторых деталях реализации проекта:
 
@@ -74,26 +74,26 @@ The project meets all the requirements described in the [terms of reference](htt
 
 | Theme | Technology |
 |---|---|
-| 🧱 Архитектура | VIPER, модульная |
-| 🌐 Работа с сетью | URLSession |
-| 🗄 Хранение данных | CoreData, UserDefaults |
-| ⛓ Многопоточность | Grand Central Dispatch |
-| 🛠 Тестирование | XCTest |
-| 📱 Версия iOS | iOS 12.0 |
+| 🧱 Architecture | VIPER, модульная |
+| 🌐 Networking | URLSession |
+| 🗄 Persistence | CoreData, UserDefaults |
+| ⛓ Multithreading | Grand Central Dispatch |
+| 🛠 Testing | XCTest |
+| 📱 Platform | iOS 12.0 |
 
-Также стоит упомянуть о некоторых деталях реализации проекта:
+It is also worth mentioning some details of the project implementation:
 
-1. Соблюдены все принципы SOLID. Подробнее почитать об этом можно [здесь](https://github.com/iCookbook/Cookbook/wiki/SOLID)
-2. Полная локализация и плюризация
-3. Пагинация и pull-to-refresh
+1. All SOLID principles are observed. You can read more about it [here](https://github.com/cookbook/Cookbook/wiki/SOLID )
+2. Full localization and polarization
+3. Pagination and pull-to-refresh
 
-Более подробная техническая информация и детали реализации описаны в [документации проекта](https://github.com/iCookbook/Cookbook/wiki)
+More detailed technical information and implementation details are described in the [project documentation](https://github.com/iCookbook/Cookbook/wiki )
 
-Каждый модуль приложения также имеет свою страницу на [GitHub Wiki](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis) с его документацией.
+Each application module also has its own page on the [GitHub Wiki](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis ) with its documentation.
 
 ## Troubleshooting
 
-Одно или несколько из нижеприведённых действий должно вам помочь. Если всё равно что-то идёт не так, свяжитесь со мной через Telegram: [@egbad](https://t.me/egbad)
+One or more of the following actions should help you. If something goes wrong anyway, contact me via Telegram: [@egbad](https://t.me/egbad)
 
 - Clear `DerivedData`
 - Clear `Build foler`
