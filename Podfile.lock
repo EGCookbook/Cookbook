@@ -24,8 +24,8 @@ PODS:
   - Logger/Tests (1.2.2)
   - Models (2.3.1)
   - Models/Tests (2.3.1)
-  - Networking (2.4.0)
-  - Networking/Tests (2.4.0)
+  - Networking (2.4.1)
+  - Networking/Tests (2.4.1)
   - Onboarding (1.2.0):
     - CommonUI
     - Persistence
@@ -152,7 +152,7 @@ SPEC CHECKSUMS:
   Discover: 3362d73211d9519a156a0cbc3c6be17d70144781
   Logger: e6eaffd8af9ee6a1d3632036a0150ed88da7d728
   Models: 13d3d43f004585b9cb4d7c3b17dd5a8f18072389
-  Networking: 3235af1f7a7b8451f3ca9e32b2b378b8f15ef291
+  Networking: 28fe3e268ac6a46a49ff9510148177910cb43d5c
   Onboarding: 0d56ad5f1bc3386f4657504557335c86518ca030
   Persistence: 07cefb16d96cd6c2c1d03b13a23be19bb95ba1a5
   Personal: e9a5f631b23ac6bb0d2120e2a4ceba25729e14a8
