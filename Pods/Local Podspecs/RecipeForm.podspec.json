@@ -1,6 +1,6 @@
 {
   "name": "RecipeForm",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "summary": "RecipeForm module of the Cookbook app.",
   "homepage": "https://github.com/htmlprogrammist/RecipeForm",
   "authors": {
@@ -8,7 +8,7 @@
   },
   "source": {
     "git": "https://github.com/iCookbook/RecipeForm.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "12.0"
