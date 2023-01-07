@@ -1,10 +1,14 @@
 ${PODS_ROOT}/Target Support Files/Pods-Cookbook/Pods-Cookbook-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Common/Common.framework
 ${BUILT_PRODUCTS_DIR}/CommonUI/CommonUI.framework
 ${BUILT_PRODUCTS_DIR}/Discover/Discover.framework
+${BUILT_PRODUCTS_DIR}/Logger/Logger.framework
 ${BUILT_PRODUCTS_DIR}/Models/Models.framework
 ${BUILT_PRODUCTS_DIR}/Networking/Networking.framework
+${BUILT_PRODUCTS_DIR}/Onboarding/Onboarding.framework
 ${BUILT_PRODUCTS_DIR}/Persistence/Persistence.framework
 ${BUILT_PRODUCTS_DIR}/Personal/Personal.framework
 ${BUILT_PRODUCTS_DIR}/RecipeDetails/RecipeDetails.framework
+${BUILT_PRODUCTS_DIR}/RecipeForm/RecipeForm.framework
 ${BUILT_PRODUCTS_DIR}/Resources/Resources.framework
 ${BUILT_PRODUCTS_DIR}/Search/Search.framework

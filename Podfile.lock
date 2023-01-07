@@ -1,76 +1,166 @@
 PODS:
-  - CommonUI (0.3.7):
-    - Models
-    - Networking
-    - Resources
-  - Discover (0.2.4):
+  - Common (1.0.0):
     - CommonUI
+    - Logger
     - Models
     - Networking
     - RecipeDetails
+  - Common/Tests (1.0.0):
+    - CommonUI
+    - Logger
+    - Models
+    - Networking
+    - RecipeDetails
+  - CommonUI (1.0.1):
+    - Models
     - Resources
-  - Models (2.0.0)
-  - Networking (2.0.2):
+  - Discover (1.0.0):
+    - Common
+    - CommonUI
     - Models
-  - Persistence (1.5.0):
-    - Models
-  - Personal (0.1.0):
+    - Networking
+    - Resources
+  - Logger (1.2.2)
+  - Logger/Tests (1.2.2)
+  - Models (2.3.1)
+  - Models/Tests (2.3.1)
+  - Networking (2.4.1)
+  - Networking/Tests (2.4.1)
+  - Onboarding (1.2.0):
     - CommonUI
     - Persistence
     - Resources
-  - RecipeDetails (1.0.2):
+  - Onboarding/Tests (1.2.0):
+    - CommonUI
+    - Persistence
+    - Resources
+  - Persistence (3.1.0):
+    - Logger
+    - Models
+  - Persistence/Tests (3.1.0):
+    - Logger
+    - Models
+  - Personal (1.3.0):
+    - CommonUI
+    - Logger
+    - Persistence
+    - RecipeDetails
+    - RecipeForm
+    - Resources
+  - Personal/Tests (1.3.0):
+    - CommonUI
+    - Logger
+    - Persistence
+    - RecipeDetails
+    - RecipeForm
+    - Resources
+  - RecipeDetails (1.6.0):
     - CommonUI
     - Models
     - Persistence
     - Resources
-  - Resources (0.2.0)
-  - Search (0.1.0):
+  - RecipeDetails/Tests (1.6.0):
+    - CommonUI
+    - Models
+    - Persistence
+    - Resources
+  - RecipeForm (1.0.0):
+    - CommonUI
+    - Logger
+    - Models
+    - Persistence
+    - Resources
+  - RecipeForm/Tests (1.0.0):
+    - CommonUI
+    - Logger
+    - Models
+    - Persistence
+    - Resources
+  - Resources (1.0.0):
+    - Logger
+  - Search (2.2.0):
+    - Common
+    - CommonUI
+    - Logger
+    - Models
+    - Networking
+    - Resources
+  - Search/Tests (2.2.0):
+    - Common
+    - CommonUI
+    - Logger
     - Models
     - Networking
     - Resources
 
 DEPENDENCIES:
+  - Common (from `Modules/Common`)
+  - Common/Tests (from `Modules/Common`)
   - CommonUI (from `Modules/CommonUI`)
   - Discover (from `Modules/Discover`)
+  - Logger (from `Modules/Logger`)
+  - Logger/Tests (from `Modules/Logger`)
   - Models (from `Modules/Models`)
+  - Models/Tests (from `Modules/Models`)
   - Networking (from `Modules/Networking`)
+  - Networking/Tests (from `Modules/Networking`)
+  - Onboarding (from `Modules/Onboarding`)
+  - Onboarding/Tests (from `Modules/Onboarding`)
   - Persistence (from `Modules/Persistence`)
+  - Persistence/Tests (from `Modules/Persistence`)
   - Personal (from `Modules/Personal`)
+  - Personal/Tests (from `Modules/Personal`)
   - RecipeDetails (from `Modules/RecipeDetails`)
+  - RecipeDetails/Tests (from `Modules/RecipeDetails`)
+  - RecipeForm (from `Modules/RecipeForm`)
+  - RecipeForm/Tests (from `Modules/RecipeForm`)
   - Resources (from `Modules/Resources`)
   - Search (from `Modules/Search`)
+  - Search/Tests (from `Modules/Search`)
 
 EXTERNAL SOURCES:
+  Common:
+    :path: Modules/Common
   CommonUI:
     :path: Modules/CommonUI
   Discover:
     :path: Modules/Discover
+  Logger:
+    :path: Modules/Logger
   Models:
     :path: Modules/Models
   Networking:
     :path: Modules/Networking
+  Onboarding:
+    :path: Modules/Onboarding
   Persistence:
     :path: Modules/Persistence
   Personal:
     :path: Modules/Personal
   RecipeDetails:
     :path: Modules/RecipeDetails
+  RecipeForm:
+    :path: Modules/RecipeForm
   Resources:
     :path: Modules/Resources
   Search:
     :path: Modules/Search
 
 SPEC CHECKSUMS:
-  CommonUI: a4011b1572c784492579854bc691038cc49d3a63
-  Discover: 4fa5408a3e13d30d4bde06e58cbd076c0bca85e5
-  Models: 16edf0010b4997603aaf7d2673c3c82604e4b27e
-  Networking: aeabff054be48fa69cfb93616a747d822f251024
-  Persistence: a575ff102ff4188703eb3ed800ecd14ee5faca42
-  Personal: 809069303b126736c77bd0e8b9d96d0d65ffc646
-  RecipeDetails: 9e83b73134d5290a514fc0f7d68a547e3e6e307b
-  Resources: 9ed68cf3fc65d9aa84cba332dc940bcb313b3269
-  Search: 8c91365acb8cd7790a18f3ea6334633a71e7485f
+  Common: bd49459d18c0ca500ed3973d2edb5764bde012a6
+  CommonUI: e6b9ff32326d9fd5c3471b27d3ff8be0869d9157
+  Discover: 3362d73211d9519a156a0cbc3c6be17d70144781
+  Logger: e6eaffd8af9ee6a1d3632036a0150ed88da7d728
+  Models: 13d3d43f004585b9cb4d7c3b17dd5a8f18072389
+  Networking: 28fe3e268ac6a46a49ff9510148177910cb43d5c
+  Onboarding: 0d56ad5f1bc3386f4657504557335c86518ca030
+  Persistence: 07cefb16d96cd6c2c1d03b13a23be19bb95ba1a5
+  Personal: e9a5f631b23ac6bb0d2120e2a4ceba25729e14a8
+  RecipeDetails: 0baf612c0488222570e45bb954c19fe37a85f531
+  RecipeForm: c30a8080785122612aa52d572e10a5c5c856ff52
+  Resources: 8b49dca69cee5cc4d195c7cebfb75d8d439b3c77
+  Search: 946a4ce7166857cdcb6614d1d8889a0144bf7f69
 
-PODFILE CHECKSUM: 4812ec7a6b52890294de6ab0392aae759cd8b8fc
+PODFILE CHECKSUM: 6cb10888748d056301e6a130afd78e3010870102
 
 COCOAPODS: 1.11.3

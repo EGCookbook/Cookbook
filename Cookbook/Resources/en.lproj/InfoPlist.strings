@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Cookbook
+
+  Created by Егор Бадмаев on 17.11.2022.
+  
+*/
+
+"CFBundleName" = "Cookbook";

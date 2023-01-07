@@ -13,22 +13,20 @@ final class ServiceLocator {
     
     // MARK: - Public Properties
     
+    /// Shared instance of this class.
     public static let shared = ServiceLocator()
     
     // MARK: - Private Properties
     
-    /// Core Data model's specified name.
-    private let coreDataContainerName = "Cookbook"
     /// Core Data Manager. It is responsible for all operations connected with persistance.
-    private lazy var coreDataManager: CoreDataManagerProtocol = CoreDataManager(containerName: coreDataContainerName)
+    private let coreDataManager: CoreDataManagerProtocol = CoreDataManager(containerName: "Cookbook")
     
-    /// `URLSessionConfiguration` for ``NetworkManager``.
-    private let networkConfiguration = URLSessionConfiguration.default
     /// Network Manager. It is responsible for all network requests of this app.
-    private lazy var networkManager: NetworkManagerProtocol = {
-        var urlSession = URLSession(configuration: networkConfiguration)
-        let networkManager = NetworkManager(session: urlSession)
-        return networkManager
+    private let networkManager: NetworkManagerProtocol = {
+        let configuration = URLSessionConfiguration.default
+        let urlSession = URLSession(configuration: configuration)
+        let decoder = JSONDecoder()
+        return NetworkManager(session: urlSession, decoder: decoder)
     }()
     
     // MARK: - Init
@@ -37,14 +35,16 @@ final class ServiceLocator {
     
     // MARK: - Internal Methods
     
-    /// Method that resolves and provides us ``NetworkManager`` object.
-    /// - Returns: ``NetworkManager`` instance.
+    /// Method that resolves and provides us `NetworkManager` object.
+    ///
+    /// - Returns: `NetworkManager`` instance.
     func resolveNetworkManager() -> NetworkManagerProtocol {
         return networkManager
     }
     
-    /// Method that resolves and provides us ``CoreDataManager`` object.
-    /// - Returns: ``CoreDataManager`` instance.
+    /// Method that resolves and provides us `CoreDataManager` object.
+    ///
+    /// - Returns: `CoreDataManager` instance.
     func resolveCoreDataManager() -> CoreDataManagerProtocol {
         return coreDataManager
     }

@@ -10,6 +10,7 @@ import Discover
 import Search
 import Personal
 import Resources
+import Onboarding
 
 final class AppCoordinator {
     
@@ -31,6 +32,7 @@ final class AppCoordinator {
     /// This method setup tab bar controller with 3 modules and set root view controller for the `UIWindow`
     func start() {
         Fonts.registerFonts()
+        window.tintColor = Colors.appColor
         
         setupDiscover()
         setupSearch()
@@ -39,6 +41,25 @@ final class AppCoordinator {
         
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()
+        
+        if !UserDefaults.hasOnboarded {
+            openOnboarding()
+        }
+    }
+    
+    func openOnboarding() {
+        let context = OnboardingContext(moduleOutput: self)
+        let assembly = OnboardingAssembly.assemble(with: context)
+        tabBarController.present(assembly.viewController, animated: true)
+    }
+}
+
+// MARK: - OnboardingModuleOutput
+
+extension AppCoordinator: OnboardingModuleOutput {
+    
+    func onboardingModuleDidFinish() {
+        tabBarController.presentedViewController?.dismiss(animated: true)
     }
 }
 
@@ -71,7 +92,7 @@ private extension AppCoordinator {
         let navController = UINavigationController(rootViewController: viewController)
         navController.tabBarItem = UITabBarItem(title: itemName, image: itemImage, tag: 0)
         navController.navigationBar.largeTitleTextAttributes = [.font: Fonts.largeTitle()]
-        navController.navigationBar.titleTextAttributes = [.font: Fonts.navControllerTitle()]
+        navController.navigationBar.titleTextAttributes = [.font: Fonts.headline()]
         navController.navigationBar.prefersLargeTitles = true
         return navController
     }

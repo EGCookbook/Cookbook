@@ -1,6 +1,6 @@
 {
   "name": "CommonUI",
-  "version": "0.3.7",
+  "version": "1.0.1",
   "summary": "Common UI layer.",
   "homepage": "https://github.com/iCookbook/CommonUI",
   "authors": {
@@ -8,7 +8,7 @@
   },
   "source": {
     "git": "https://github.com/iCookbook/CommonUI.git",
-    "tag": "0.3.7"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "12.0"
@@ -20,9 +20,6 @@
 
     ],
     "Models": [
-
-    ],
-    "Networking": [
 
     ]
   },

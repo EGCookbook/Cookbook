@@ -1,6 +1,6 @@
 {
   "name": "Resources",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "summary": "Resources layer of the application.",
   "homepage": "https://github.com/iCookbook/Resources",
   "authors": {
@@ -8,7 +8,7 @@
   },
   "source": {
     "git": "https://github.com/iCookbook/Resources.git",
-    "tag": "0.2.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "12.0"
@@ -17,7 +17,12 @@
   "source_files": "Resources/**/*.{swift}",
   "resource_bundles": {
     "Resources": [
-      "Resources/**/*.{strings,xcassets,otf}"
+      "Resources/**/*.{strings,xcassets,otf,stringsdict}"
+    ]
+  },
+  "dependencies": {
+    "Logger": [
+
     ]
   },
   "swift_version": "5.0"

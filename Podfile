@@ -6,24 +6,32 @@ project 'Cookbook.xcodeproj'
 
 # Common & Services layers
 
+def common_pod
+  pod 'Common', :path => 'Modules/Common', :testspecs => ['Tests']
+end
+
 def commonui_pod
   pod 'CommonUI', :path => 'Modules/CommonUI'
 end
 
 def models_pod
-  pod 'Models', :path => 'Modules/Models'
+  pod 'Models', :path => 'Modules/Models', :testspecs => ['Tests']
 end
 
 def networking_pod
-  pod 'Networking', :path => 'Modules/Networking'
+  pod 'Networking', :path => 'Modules/Networking', :testspecs => ['Tests']
 end
 
 def persistence_pod
-  pod 'Persistence', :path => 'Modules/Persistence'
+  pod 'Persistence', :path => 'Modules/Persistence', :testspecs => ['Tests']
 end
 
 def resources_pod
   pod 'Resources', :path => 'Modules/Resources'
+end
+
+def logger_pod
+  pod 'Logger', :path => 'Modules/Logger', :testspecs => ['Tests']
 end
 
 # Features/App Modules
@@ -33,30 +41,42 @@ def discover_module_pod
 end
 
 def recipedetails_module_pod
-  pod 'RecipeDetails', :path => 'Modules/RecipeDetails'
+  pod 'RecipeDetails', :path => 'Modules/RecipeDetails', :testspecs => ['Tests']
 end
 
 def search_module_pod
-  pod 'Search', :path => 'Modules/Search'
+  pod 'Search', :path => 'Modules/Search', :testspecs => ['Tests']
 end
 
 def personal_module_pod
-  pod 'Personal', :path => 'Modules/Personal'
+  pod 'Personal', :path => 'Modules/Personal', :testspecs => ['Tests']
+end
+
+def recipeform_module_pod
+  pod 'RecipeForm', :path => 'Modules/RecipeForm', :testspecs => ['Tests']
+end
+
+def onboarding_pod
+  pod 'Onboarding', :path => 'Modules/Onboarding', :testspecs => ['Tests']
 end
 
 # DevPods
 
 def development_pods
+  common_pod
   commonui_pod
   models_pod
   networking_pod
   persistence_pod
   resources_pod
+  logger_pod
   
   discover_module_pod
   recipedetails_module_pod
   search_module_pod
   personal_module_pod
+  recipeform_module_pod
+  onboarding_pod
 end
 
 target 'Cookbook' do
@@ -113,7 +133,6 @@ target 'Discover_Example' do
   project 'Modules/Discover/Example/Discover.xcodeproj'
   
   discover_module_pod
-  networking_pod
 end
 
 target 'RecipeDetails_Example' do
@@ -121,9 +140,6 @@ target 'RecipeDetails_Example' do
   project 'Modules/RecipeDetails/Example/RecipeDetails.xcodeproj'
   
   recipedetails_module_pod
-  persistence_pod
-  commonui_pod
-  resources_pod
 end
 
 target 'Search_Example' do
@@ -138,4 +154,25 @@ target 'Personal_Example' do
   project 'Modules/Personal/Example/Personal.xcodeproj'
   
   personal_module_pod
+end
+
+target 'RecipeForm_Example' do
+  use_frameworks!
+  project 'Modules/RecipeForm/Example/RecipeForm.xcodeproj'
+  
+  recipeform_module_pod
+end
+
+target 'Onboarding_Example' do
+  use_frameworks!
+  project 'Modules/Onboarding/Example/Onboarding.xcodeproj'
+  
+  onboarding_pod
+end
+
+target 'Logger_Example' do
+  use_frameworks!
+  project 'Modules/Logger/Example/Logger.xcodeproj'
+  
+  logger_pod
 end

@@ -24,9 +24,9 @@ class AppCoordinatorTests: XCTestCase {
     }
     
     /// This test simulates start of the application and checks that there is new view controller in `window.rootViewController`.
-    func testExample() throws {
+    func testStartMethod() throws {
         XCTAssertNoThrow(appCoordinator.start())
         
-        XCTAssertNoThrow(window.rootViewController)
+        XCTAssertNotNil(window.rootViewController)
     }
 }
