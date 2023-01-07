@@ -31,6 +31,7 @@ final class ServiceLocator {
     
     // MARK: - Init
     
+    /// Private initializer for singleton.
     private init() {}
     
     // MARK: - Internal Methods
