@@ -1,0 +1,42 @@
+{
+  "name": "Onboarding",
+  "version": "1.2.0",
+  "summary": "Project's \"Onboarding\" module.",
+  "homepage": "https://github.com/htmlprogrammist/Onboarding",
+  "screenshots": [
+    "https://user-images.githubusercontent.com/60363270/210895101-0d205d0b-a320-4c60-bec1-b1e8a4d41f20.jpeg",
+    "https://user-images.githubusercontent.com/60363270/210895135-cbd57450-37ae-45cf-bbd1-e8387ec579d9.jpeg",
+    "https://user-images.githubusercontent.com/60363270/210895147-6c1221b7-53e8-4d65-8f7c-d98769007dce.jpeg"
+  ],
+  "authors": {
+    "htmlprogrammist": "60363270+htmlprogrammist@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/iCookbook/Onboarding.git",
+    "tag": "1.2.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "Onboarding/Sources/**/*.{swift}",
+  "dependencies": {
+    "Resources": [
+
+    ],
+    "CommonUI": [
+
+    ],
+    "Persistence": [
+
+    ]
+  },
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "Onboarding/Tests/**/*.{swift}"
+    }
+  ],
+  "swift_version": "5.0"
+}

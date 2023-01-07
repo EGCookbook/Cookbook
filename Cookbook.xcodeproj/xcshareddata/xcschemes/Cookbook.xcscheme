@@ -26,10 +26,12 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "NO"
+            parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F0BF8C00290EC17000D271CD"
@@ -49,12 +51,106 @@
             </BuildableReference>
          </TestableReference>
          <TestableReference
-            skipped = "NO">
+            skipped = "NO"
+            parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "97D17BC248C5141F69136BDDAF402F28"
                BuildableName = "Logger-Unit-Tests.xctest"
                BlueprintName = "Logger-Unit-Tests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3B6D6BBE62BA0BD4134FF0A145590E60"
+               BuildableName = "Models-Unit-Tests.xctest"
+               BlueprintName = "Models-Unit-Tests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8D32D18C8BC41BE3111224975F1EF983"
+               BuildableName = "Search-Unit-Tests.xctest"
+               BlueprintName = "Search-Unit-Tests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "609F0B2A285E63C22CCC0A18E835017E"
+               BuildableName = "Common-Unit-Tests.xctest"
+               BlueprintName = "Common-Unit-Tests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7BB0ABF2B7CACC3A8AD5A049BF8B1F62"
+               BuildableName = "Personal-Unit-Tests.xctest"
+               BlueprintName = "Personal-Unit-Tests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "16194B3091E93D1E32D2C2FA022E7D0E"
+               BuildableName = "Persistence-Unit-Tests.xctest"
+               BlueprintName = "Persistence-Unit-Tests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "650926D07930BD778F9C020CCFA1F395"
+               BuildableName = "RecipeForm-Unit-Tests.xctest"
+               BlueprintName = "RecipeForm-Unit-Tests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EBDE3E4CF472CEA52FA7CA22933EE6B3"
+               BuildableName = "Networking-Unit-Tests.xctest"
+               BlueprintName = "Networking-Unit-Tests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "70504515AF81C55320AC711E7F13794F"
+               BuildableName = "RecipeDetails-Unit-Tests.xctest"
+               BlueprintName = "RecipeDetails-Unit-Tests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5DFDA5B3B84B77B10267FFA02B05D5B7"
+               BuildableName = "Onboarding-Unit-Tests.xctest"
+               BlueprintName = "Onboarding-Unit-Tests"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </TestableReference>

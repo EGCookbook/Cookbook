@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "97D17BC248C5141F69136BDDAF402F28"
-               BuildableName = "Logger-Unit-Tests.xctest"
-               BlueprintName = "Logger-Unit-Tests"
+               BlueprintIdentifier = "8D32D18C8BC41BE3111224975F1EF983"
+               BuildableName = "Search-Unit-Tests.xctest"
+               BlueprintName = "Search-Unit-Tests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "97D17BC248C5141F69136BDDAF402F28"
-               BuildableName = "Logger-Unit-Tests.xctest"
-               BlueprintName = "Logger-Unit-Tests"
+               BlueprintIdentifier = "8D32D18C8BC41BE3111224975F1EF983"
+               BuildableName = "Search-Unit-Tests.xctest"
+               BlueprintName = "Search-Unit-Tests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </TestableReference>

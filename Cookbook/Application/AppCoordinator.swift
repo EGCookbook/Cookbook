@@ -10,6 +10,7 @@ import Discover
 import Search
 import Personal
 import Resources
+import Onboarding
 
 final class AppCoordinator {
     
@@ -40,6 +41,25 @@ final class AppCoordinator {
         
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()
+        
+        if !UserDefaults.hasOnboarded {
+            openOnboarding()
+        }
+    }
+    
+    func openOnboarding() {
+        let context = OnboardingContext(moduleOutput: self)
+        let assembly = OnboardingAssembly.assemble(with: context)
+        tabBarController.present(assembly.viewController, animated: true)
+    }
+}
+
+// MARK: - OnboardingModuleOutput
+
+extension AppCoordinator: OnboardingModuleOutput {
+    
+    func onboardingModuleDidFinish() {
+        tabBarController.presentedViewController?.dismiss(animated: true)
     }
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "Networking",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "summary": "Layer responsible for all networking of the application.",
   "homepage": "https://github.com/iCookbook/Networking",
   "authors": {
@@ -8,17 +8,19 @@
   },
   "source": {
     "git": "https://github.com/iCookbook/Networking.git",
-    "tag": "2.1.0"
+    "tag": "2.3.0"
   },
   "platforms": {
     "ios": "12.0"
   },
   "swift_versions": "5.0",
-  "source_files": "Networking/**/*.{swift}",
-  "dependencies": {
-    "Models": [
-
-    ]
-  },
+  "source_files": "Networking/Sources/**/*.{swift}",
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "Networking/Tests/**/*.{swift}"
+    }
+  ],
   "swift_version": "5.0"
 }

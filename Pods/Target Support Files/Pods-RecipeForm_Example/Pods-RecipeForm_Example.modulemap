@@ -1,0 +1,6 @@
+framework module Pods_RecipeForm_Example {
+  umbrella header "Pods-RecipeForm_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

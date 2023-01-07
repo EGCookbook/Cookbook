@@ -1,0 +1,43 @@
+{
+  "name": "RecipeForm",
+  "version": "0.1.0",
+  "summary": "RecipeForm module of the Cookbook app.",
+  "homepage": "https://github.com/htmlprogrammist/RecipeForm",
+  "authors": {
+    "htmlprogrammist": "60363270+htmlprogrammist@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/iCookbook/RecipeForm.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "RecipeForm/Sources/**/*",
+  "dependencies": {
+    "Models": [
+
+    ],
+    "Persistence": [
+
+    ],
+    "CommonUI": [
+
+    ],
+    "Resources": [
+
+    ],
+    "Logger": [
+
+    ]
+  },
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "RecipeForm/Tests/**/*.{swift}"
+    }
+  ],
+  "swift_version": "5.0"
+}

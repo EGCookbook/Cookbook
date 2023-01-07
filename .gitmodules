@@ -31,3 +31,9 @@
 [submodule "Modules/Logger"]
 	path = Modules/Logger
 	url = https://github.com/iCookbook/Logger
+[submodule "Modules/RecipeForm"]
+	path = Modules/RecipeForm
+	url = https://github.com/iCookbook/RecipeForm
+[submodule "Modules/Onboarding"]
+	path = Modules/Onboarding
+	url = https://github.com/iCookbook/Onboarding

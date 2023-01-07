@@ -182,9 +182,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Logger/Logger.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Models/Models.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Networking/Networking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Onboarding/Onboarding.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Persistence/Persistence.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Personal/Personal.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RecipeDetails/RecipeDetails.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RecipeForm/RecipeForm.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Resources/Resources.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Search/Search.framework"
 fi
@@ -195,9 +197,11 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Logger/Logger.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Models/Models.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Networking/Networking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Onboarding/Onboarding.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Persistence/Persistence.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Personal/Personal.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RecipeDetails/RecipeDetails.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RecipeForm/RecipeForm.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Resources/Resources.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Search/Search.framework"
 fi

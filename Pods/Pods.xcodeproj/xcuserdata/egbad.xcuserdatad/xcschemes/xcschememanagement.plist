@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Common-Unit-Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Common.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,7 +34,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Models-Unit-Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Models.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Networking-Unit-Tests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -39,7 +54,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Onboarding-Unit-Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Onboarding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Persistence-Unit-Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Persistence.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Personal-Unit-Tests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -84,6 +119,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Onboarding_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Persistence_Example.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -99,6 +139,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-RecipeForm_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Resources_Example.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -109,7 +154,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RecipeDetails-Unit-Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>RecipeDetails.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RecipeForm-Unit-Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RecipeForm.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -120,6 +180,11 @@
 			<false/>
 		</dict>
 		<key>Resources.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Search-Unit-Tests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

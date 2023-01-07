@@ -34,4 +34,10 @@
    <FileRef
       location = "group:Modules/Logger/Example/Logger.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Modules/RecipeForm/Example/RecipeForm.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Onboarding/Example/Onboarding.xcodeproj">
+   </FileRef>
 </Workspace>

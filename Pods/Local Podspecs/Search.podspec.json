@@ -1,6 +1,6 @@
 {
   "name": "Search",
-  "version": "1.0.6",
+  "version": "2.2.0",
   "summary": "'Search' module.",
   "homepage": "https://github.com/iCookbook/Search",
   "authors": {
@@ -8,13 +8,13 @@
   },
   "source": {
     "git": "https://github.com/iCookbook/Search.git",
-    "tag": "1.0.6"
+    "tag": "2.2.0"
   },
   "platforms": {
     "ios": "12.0"
   },
   "swift_versions": "5.0",
-  "source_files": "Search/**/*.{swift}",
+  "source_files": "Search/Sources/**/*.{swift}",
   "dependencies": {
     "Common": [
 
@@ -35,5 +35,12 @@
 
     ]
   },
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "Search/Tests/**/*.{swift}"
+    }
+  ],
   "swift_version": "5.0"
 }
