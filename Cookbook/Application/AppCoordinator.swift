@@ -15,7 +15,7 @@ import Onboarding
 import Networking
 import Persistence
 
-/// An object responsible for setting up modules and etc.
+/// An object responsible for setting the modules up.
 final class AppCoordinator {
     
     // MARK: - Private Properties
@@ -31,12 +31,13 @@ final class AppCoordinator {
     
     // MARK: - Init
     
+    /// Creates app coordinator with specified window and application DI container.
     init(window: UIWindow, appDIContainer: AppDIContainer) {
         self.window = window
         self.appDIContainer = appDIContainer
     }
     
-    /// This method setup tab bar controller with 3 modules and set root view controller for the `UIWindow`
+    /// This method setup tab bar controller with 3 modules and set root view controller for the `UIWindow`.
     func start() {
         Fonts.registerFonts()
         window.tintColor = Colors.appColor
@@ -54,6 +55,7 @@ final class AppCoordinator {
         }
     }
     
+    /// Assembles and presents _Onboarding_ module.
     func openOnboarding() {
         let context = OnboardingContext(moduleOutput: self)
         let assembly = OnboardingAssembly.assemble(with: context)
@@ -65,6 +67,7 @@ final class AppCoordinator {
 
 extension AppCoordinator: OnboardingModuleOutput {
     
+    /// Dismisses _Onboarding_ module.
     func onboardingModuleDidFinish() {
         tabBarController.presentedViewController?.dismiss(animated: true)
     }
@@ -94,7 +97,7 @@ private extension AppCoordinator {
         viewControllers.append(analyticsViewController)
     }
     
-    /// Creates navigation controller and set tab bar item to it
+    /// Creates navigation controller and set tab bar item to it.
     func createNavController(viewController: UIViewController, itemName: String, itemImage: UIImage?) -> UINavigationController {
         let navController = UINavigationController(rootViewController: viewController)
         navController.tabBarItem = UITabBarItem(title: itemName, image: itemImage, tag: 0)
