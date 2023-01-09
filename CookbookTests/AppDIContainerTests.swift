@@ -10,26 +10,16 @@ import XCTest
 
 class AppDIContainerTests: XCTestCase {
     
-    /// SUT.
-    var appDIContainer: AppDIContainer!
-    let mockNetworkManager = MockNetworkManager()
-    let mockCoreDataManager = MockCoreDataManager()
-    
     override func setUpWithError() throws {
-        appDIContainer = AppDIContainer(networkManager: mockNetworkManager, coreDataManager: mockCoreDataManager)
     }
     
     override func tearDownWithError() throws {
-        appDIContainer = nil
     }
     
-    /// # In tests below, it is checked that the returned object is `nil`.
-    
-    func testResolvingNetworkManager() throws {
-        XCTAssertNotNil(appDIContainer.makeDefaultNetworkManager())
-    }
-    
-    func testResolvingCoreDataManager() throws {
-        XCTAssertNotNil(appDIContainer.makeDefaultCoreDataManager())
+    /// We test that we can access dependencies inside `AppDIContainer`.
+    func testMakingDefaultAppDIContainer() throws {
+        let appDIContainer = AppDIContainer.makeDefault()
+        XCTAssertNoThrow(appDIContainer.networkManager)
+        XCTAssertNoThrow(appDIContainer.coreDataManager)
     }
 }
