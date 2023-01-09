@@ -1,6 +1,6 @@
 {
   "name": "Search",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "summary": "'Search' module.",
   "homepage": "https://github.com/iCookbook/Search",
   "authors": {
@@ -8,7 +8,7 @@
   },
   "source": {
     "git": "https://github.com/iCookbook/Search.git",
-    "tag": "2.2.0"
+    "tag": "3.0.0"
   },
   "platforms": {
     "ios": "12.0"

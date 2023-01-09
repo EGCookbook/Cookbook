@@ -1,6 +1,6 @@
 {
   "name": "Personal",
-  "version": "1.3.0",
+  "version": "2.0.1",
   "summary": "'Personal' module.",
   "homepage": "https://github.com/iCookbook/Personal",
   "screenshots": [
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/iCookbook/Personal.git",
-    "tag": "1.3.0"
+    "tag": "2.0.1"
   },
   "platforms": {
     "ios": "12.0"
