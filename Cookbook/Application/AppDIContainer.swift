@@ -11,20 +11,21 @@ import Persistence
 /// Class responsible for providing dependencies of the application.
 final class AppDIContainer {
     
-    /// Core Data Manager. It is responsible for all operations connected with persistance.
+    /// Core Data Manager responsible for all operations connected with persistance.
     let coreDataManager: CoreDataManagerProtocol
     
-    /// Network Manager. It is responsible for all network requests of this app.
+    /// Network Manager responsible for all network requests of this app.
     let networkManager: NetworkManagerProtocol
     
     // MARK: - Init
     
+    /// Creates instance of this class with provided services.
     private init(networkManager: NetworkManagerProtocol, coreDataManager: CoreDataManagerProtocol) {
         self.networkManager = networkManager
         self.coreDataManager = coreDataManager
     }
     
-    /// Method that resolves and provides us `NetworkManager` object.
+    /// Method that creates default application DI container.
     ///
     /// - Returns: App DI containter with default services' settings
     static func makeDefault() -> AppDIContainer {

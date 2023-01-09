@@ -20,7 +20,7 @@ final class AppCoordinator {
     
     // MARK: - Private Properties
     
-    /// `UIWindow` of the application, provided from the ``AppDelegate``
+    /// `UIWindow` of the application, provided from the ``AppDelegate``.
     private let window: UIWindow
     /// An obect responsible for DI.
     private let appDIContainer: AppDIContainer
