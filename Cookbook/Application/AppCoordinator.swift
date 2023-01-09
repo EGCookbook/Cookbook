@@ -6,19 +6,24 @@
 //
 
 import UIKit
+import Common
 import Discover
 import Search
 import Personal
 import Resources
 import Onboarding
+import Networking
+import Persistence
 
-/// An object responsible for setting the project up.
+/// An object responsible for setting the modules up.
 final class AppCoordinator {
     
     // MARK: - Private Properties
     
     /// `UIWindow` of the application, provided from the ``AppDelegate``
     private let window: UIWindow
+    /// An obect responsible for DI.
+    private let appDIContainer: AppDIContainer
     /// Root view controller of the application
     private let tabBarController = UITabBarController()
     /// View controllers to set in the tab bar controller
@@ -26,9 +31,10 @@ final class AppCoordinator {
     
     // MARK: - Init
     
-    /// Creates app coordinator with specified window.
-    init(window: UIWindow) {
+    /// Creates app coordinator with specified window and application DI container.
+    init(window: UIWindow, appDIContainer: AppDIContainer) {
         self.window = window
+        self.appDIContainer = appDIContainer
     }
     
     /// This method setup tab bar controller with 3 modules and set root view controller for the `UIWindow`.
@@ -71,21 +77,21 @@ extension AppCoordinator: OnboardingModuleOutput {
 
 private extension AppCoordinator {
     func setupDiscover() {
-        let context = DiscoverContext(moduleDependency: ServiceLocator.shared.resolveNetworkManager())
+        let context = BaseRecipesContext(networkManager: appDIContainer.networkManager)
         let assembly = DiscoverAssembly.assemble(with: context)
         let discoverViewController = createNavController(viewController: assembly.viewController, itemName: Texts.Discover.title, itemImage: Images.TabBarItems.discover)
         viewControllers.append(discoverViewController)
     }
     
     func setupSearch() {
-        let context = SearchContext(moduleDependency: ServiceLocator.shared.resolveNetworkManager())
+        let context = BaseRecipesContext(networkManager: appDIContainer.networkManager)
         let assembly = SearchAssembly.assemble(with: context)
         let historyViewController = createNavController(viewController: assembly.viewController, itemName: Texts.Search.title, itemImage: Images.TabBarItems.search)
         viewControllers.append(historyViewController)
     }
     
     func setupPersonal() {
-        let context = PersonalContext(moduleDependency: ServiceLocator.shared.resolveCoreDataManager())
+        let context = PersonalContext(coreDataManager: appDIContainer.coreDataManager)
         let assembly = PersonalAssembly.assemble(with: context)
         let analyticsViewController = createNavController(viewController: assembly.viewController, itemName: Texts.Personal.title, itemImage: Images.TabBarItems.person)
         viewControllers.append(analyticsViewController)
@@ -99,5 +105,32 @@ private extension AppCoordinator {
         navController.navigationBar.titleTextAttributes = [.font: Fonts.headline()]
         navController.navigationBar.prefersLargeTitles = true
         return navController
+    }
+}
+
+// MARK: - Modules' contexts
+
+private extension AppCoordinator {
+    
+    /// Wrapper over `BaseRecipes` module requirements.
+    struct BaseRecipesContext: BaseRecipesDependenciesProtocol {
+        weak var moduleOutput: BaseRecipesModuleOutput?
+        let networkManager: NetworkManagerProtocol
+        
+        init(moduleOutput: BaseRecipesModuleOutput? = nil, networkManager: NetworkManagerProtocol) {
+            self.moduleOutput = moduleOutput
+            self.networkManager = networkManager
+        }
+    }
+    
+    /// Wrapper over `Personal` module requirements.
+    struct PersonalContext: PersonalDependenciesProtocol {
+        weak var moduleOutput: PersonalModuleOutput?
+        let coreDataManager: CoreDataManagerProtocol
+        
+        init(moduleOutput: PersonalModuleOutput? = nil, coreDataManager: CoreDataManagerProtocol) {
+            self.moduleOutput = moduleOutput
+            self.coreDataManager = coreDataManager
+        }
     }
 }

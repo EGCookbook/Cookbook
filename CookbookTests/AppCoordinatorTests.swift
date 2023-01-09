@@ -11,15 +11,18 @@ import XCTest
 class AppCoordinatorTests: XCTestCase {
     
     var window: UIWindow!
+    var appDIContainer: AppDIContainer!
     var appCoordinator: AppCoordinator!
     
     override func setUpWithError() throws {
         window = UIWindow(frame: .zero)
-        appCoordinator = AppCoordinator(window: window)
+        appDIContainer = AppDIContainer.makeDefault()
+        appCoordinator = AppCoordinator(window: window, appDIContainer: appDIContainer)
     }
     
     override func tearDownWithError() throws {
         window = nil
+        appDIContainer = nil
         appCoordinator = nil
     }
     
