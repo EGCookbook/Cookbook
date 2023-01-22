@@ -5,6 +5,7 @@
 //  Created by Егор Бадмаев on 28.10.2022.
 //
 
+import Foundation
 import Networking
 import Persistence
 
@@ -20,7 +21,8 @@ final class AppDIContainer {
     // MARK: - Init
     
     /// Creates instance of this class with provided services.
-    private init(networkManager: NetworkManagerProtocol, coreDataManager: CoreDataManagerProtocol) {
+    private init(networkManager: NetworkManagerProtocol,
+                 coreDataManager: CoreDataManagerProtocol) {
         self.networkManager = networkManager
         self.coreDataManager = coreDataManager
     }

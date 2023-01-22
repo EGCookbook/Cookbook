@@ -1,11 +1,11 @@
 PODS:
-  - Common (2.0.0):
+  - Common (2.0.1):
     - CommonUI
     - Logger
     - Models
     - Networking
     - RecipeDetails
-  - Common/Tests (2.0.0):
+  - Common/Tests (2.0.1):
     - CommonUI
     - Logger
     - Models
@@ -14,18 +14,18 @@ PODS:
   - CommonUI (1.0.1):
     - Models
     - Resources
-  - Discover (2.0.0):
+  - Discover (2.0.1):
     - Common
     - CommonUI
     - Models
     - Networking
     - Resources
-  - Logger (1.2.2)
-  - Logger/Tests (1.2.2)
+  - Logger (1.2.3)
+  - Logger/Tests (1.2.3)
   - Models (2.3.1)
   - Models/Tests (2.3.1)
-  - Networking (2.4.2)
-  - Networking/Tests (2.4.2)
+  - Networking (2.4.3)
+  - Networking/Tests (2.4.3)
   - Onboarding (1.2.0):
     - CommonUI
     - Persistence
@@ -54,23 +54,23 @@ PODS:
     - RecipeDetails
     - RecipeForm
     - Resources
-  - RecipeDetails (2.0.0):
+  - RecipeDetails (2.0.1):
     - CommonUI
     - Models
     - Persistence
     - Resources
-  - RecipeDetails/Tests (2.0.0):
+  - RecipeDetails/Tests (2.0.1):
     - CommonUI
     - Models
     - Persistence
     - Resources
-  - RecipeForm (2.0.0):
+  - RecipeForm (2.0.1):
     - CommonUI
     - Logger
     - Models
     - Persistence
     - Resources
-  - RecipeForm/Tests (2.0.0):
+  - RecipeForm/Tests (2.0.1):
     - CommonUI
     - Logger
     - Models
@@ -92,6 +92,7 @@ PODS:
     - Models
     - Networking
     - Resources
+  - SwiftLint (0.50.3)
 
 DEPENDENCIES:
   - Common (from `Modules/Common`)
@@ -117,6 +118,11 @@ DEPENDENCIES:
   - Resources (from `Modules/Resources`)
   - Search (from `Modules/Search`)
   - Search/Tests (from `Modules/Search`)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - SwiftLint
 
 EXTERNAL SOURCES:
   Common:
@@ -147,20 +153,21 @@ EXTERNAL SOURCES:
     :path: Modules/Search
 
 SPEC CHECKSUMS:
-  Common: df57c967af9cd9d3f7019c461e7babf5aa58091b
+  Common: f576a739d34c521916d30444ec5fd0db124dec7f
   CommonUI: e6b9ff32326d9fd5c3471b27d3ff8be0869d9157
-  Discover: 55fb69c05c916f2e62c787ceb0c64b1c7e54dddb
-  Logger: e6eaffd8af9ee6a1d3632036a0150ed88da7d728
+  Discover: c4154e4ad4e0941dca49e65f0b11e4fa6fd2834b
+  Logger: 0d59954b570f0af0b6d5bd44a8a04022ff159c80
   Models: 13d3d43f004585b9cb4d7c3b17dd5a8f18072389
-  Networking: fcf01ec6b316b7fd24152d8533c12936029c93a8
+  Networking: ad85ac023d2e5795c2817456a9e6d7b41b7e8024
   Onboarding: 0d56ad5f1bc3386f4657504557335c86518ca030
   Persistence: 9ec49ee4b4ae5d790a30f6b7fba42961113d341a
   Personal: 18eb3ff17ea935d7a0a39f75e45be8aa5710d3ad
-  RecipeDetails: 8fd3ae18f99e93d7da534a7574dc703d709e89b2
-  RecipeForm: f0f429b32000fa20e3e1caf6d1cd3b739824a50d
+  RecipeDetails: 777aaefff0a23b9c8a04a68323ad454463049d18
+  RecipeForm: 8cbb5c46ef2ce598889e35bbb08635bff0948e82
   Resources: 8b49dca69cee5cc4d195c7cebfb75d8d439b3c77
   Search: e5df0b5fd31b0035b74504d1e7467ff5ef7f9e49
+  SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
 
-PODFILE CHECKSUM: 6cb10888748d056301e6a130afd78e3010870102
+PODFILE CHECKSUM: 9f9b3d8b439ec806dcb4bb2568bde514bb9e5760
 
 COCOAPODS: 1.11.3

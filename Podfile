@@ -85,14 +85,12 @@ target 'Cookbook' do
 
   # Pods for Cookbook
   development_pods
+  
+  pod 'SwiftLint'
 end
 
 target 'CookbookTests' do
   inherit! :search_paths
-  # Pods for testing
-end
-
-target 'CookbookUITests' do
   # Pods for testing
 end
 

@@ -98,7 +98,9 @@ private extension AppCoordinator {
     }
     
     /// Creates navigation controller and set tab bar item to it.
-    func createNavController(viewController: UIViewController, itemName: String, itemImage: UIImage?) -> UINavigationController {
+    func createNavController(viewController: UIViewController,
+                             itemName: String,
+                             itemImage: UIImage?) -> UINavigationController {
         let navController = UINavigationController(rootViewController: viewController)
         navController.tabBarItem = UITabBarItem(title: itemName, image: itemImage, tag: 0)
         navController.navigationBar.largeTitleTextAttributes = [.font: Fonts.largeTitle()]
