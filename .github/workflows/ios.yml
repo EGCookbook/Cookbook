@@ -20,9 +20,9 @@ jobs:
     
     - name: SwiftLint
       run: swiftlint lint
-    
-    - name: Build on iOS 16.2
-      run: xcodebuild -workspace Cookbook.xcworkspace -scheme Cookbook -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=16.2,name=iPhone 14'
 
     - name: Test on iOS 16.2
       run: xcodebuild -workspace Cookbook.xcworkspace -scheme Cookbook -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=16.2,name=iPhone 14' test
+
+    - name: Build on iOS 16.2
+      run: xcodebuild -workspace Cookbook.xcworkspace -scheme Cookbook -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=16.2,name=iPhone 14'
