@@ -1,0 +1,17 @@
+file_length:
+  warning: 800
+  error: 1500
+
+disabled_rules:
+- trailing_whitespace
+- line_length
+- unused_optional_binding
+- function_body_length
+- control_statement
+- large_tuple
+
+opt_in_rules:
+- operator_usage_whitespace
+- vertical_whitespace_between_cases
+- vertical_whitespace_closing_braces
+- force_unwrapping
