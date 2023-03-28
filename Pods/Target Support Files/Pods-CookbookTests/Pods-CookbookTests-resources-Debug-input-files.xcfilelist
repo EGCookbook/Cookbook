@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-CookbookTests/Pods-CookbookTests-resources.sh
+${PODS_ROOT}/../Modules/Persistence/Persistence/Sources/CoreData/Cookbook.xcdatamodeld
+${PODS_CONFIGURATION_BUILD_DIR}/Resources-library/Resources.bundle

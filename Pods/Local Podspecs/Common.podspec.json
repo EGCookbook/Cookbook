@@ -1,6 +1,6 @@
 {
   "name": "Common",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "summary": "Common logic layer of the project.",
   "homepage": "https://github.com/iCookbook/Common",
   "authors": {
@@ -8,7 +8,7 @@
   },
   "source": {
     "git": "https://github.com/iCookbook/Common.git",
-    "tag": "2.0.0"
+    "tag": "2.0.1"
   },
   "platforms": {
     "ios": "12.0"

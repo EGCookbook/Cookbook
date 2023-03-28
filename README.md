@@ -20,11 +20,11 @@ git clone --recurse-submodules https://github.com/iCookbook/Cookbook
 
 В [документации проекта](https://github.com/iCookbook/Cookbook/wiki) расписано более подробно, здесь же я остановлюсь на ключевых моментах:
 
-| Theme | Technology |
+| Тема | Технология |
 |---|---|
 | 🧱 Архитектура | VIPER, модульная |
 | 🌐 Работа с сетью | URLSession |
-| 🗄 Хранение данных | CoreData, UserDefaults |
+| 🗄 Хранение данных | Core Data, UserDefaults |
 | ⛓ Многопоточность | Grand Central Dispatch |
 | 🛠 Тестирование | XCTest |
 | 📱 Платформа | iOS 12.0 |
@@ -76,7 +76,7 @@ The project meets all the requirements described in the [terms of reference](htt
 |---|---|
 | 🧱 Architecture | VIPER, модульная |
 | 🌐 Networking | URLSession |
-| 🗄 Persistence | CoreData, UserDefaults |
+| 🗄 Persistence | Core Data, UserDefaults |
 | ⛓ Multithreading | Grand Central Dispatch |
 | 🛠 Testing | XCTest |
 | 📱 Platform | iOS 12.0 |

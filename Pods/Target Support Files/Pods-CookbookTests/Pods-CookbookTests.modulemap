@@ -1,4 +1,4 @@
-framework module Pods_CookbookTests {
+module Pods_CookbookTests {
   umbrella header "Pods-CookbookTests-umbrella.h"
 
   export *
